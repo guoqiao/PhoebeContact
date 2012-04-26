@@ -36,15 +36,15 @@
             this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonSend = new System.Windows.Forms.Button();
+            this.buttonAdd = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxKeyword = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerUpdateOn = new System.Windows.Forms.DateTimePicker();
+            this.comboBoxState = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -94,7 +94,7 @@
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(482, 437);
             this.listView1.Sorting = System.Windows.Forms.SortOrder.Descending;
-            this.listView1.TabIndex = 6;
+            this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
@@ -123,45 +123,46 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.buttonSend);
+            this.panel1.Controls.Add(this.buttonAdd);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 522);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(482, 38);
-            this.panel1.TabIndex = 5;
+            this.panel1.TabIndex = 2;
             // 
-            // button3
+            // buttonSend
             // 
-            this.button3.Location = new System.Drawing.Point(277, 9);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "发送";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonSend.Location = new System.Drawing.Point(277, 9);
+            this.buttonSend.Name = "buttonSend";
+            this.buttonSend.Size = new System.Drawing.Size(75, 23);
+            this.buttonSend.TabIndex = 1;
+            this.buttonSend.Text = "发送";
+            this.buttonSend.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // buttonAdd
             // 
-            this.button2.Location = new System.Drawing.Point(97, 9);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "新建";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonAdd.Location = new System.Drawing.Point(97, 9);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(75, 23);
+            this.buttonAdd.TabIndex = 0;
+            this.buttonAdd.Text = "新建";
+            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.radioButton2);
             this.groupBox3.Controls.Add(this.radioButton1);
-            this.groupBox3.Controls.Add(this.textBox1);
+            this.groupBox3.Controls.Add(this.textBoxKeyword);
             this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Controls.Add(this.dateTimePicker1);
-            this.groupBox3.Controls.Add(this.comboBox1);
+            this.groupBox3.Controls.Add(this.dateTimePickerUpdateOn);
+            this.groupBox3.Controls.Add(this.comboBoxState);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox3.Location = new System.Drawing.Point(0, 0);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(482, 85);
-            this.groupBox3.TabIndex = 4;
+            this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             // 
             // radioButton2
@@ -170,52 +171,53 @@
             this.radioButton2.Location = new System.Drawing.Point(328, 52);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(47, 16);
-            this.radioButton2.TabIndex = 5;
-            this.radioButton2.TabStop = true;
+            this.radioButton2.TabIndex = 4;
             this.radioButton2.Text = "今天";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
             this.radioButton1.Location = new System.Drawing.Point(262, 52);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(47, 16);
-            this.radioButton1.TabIndex = 4;
+            this.radioButton1.TabIndex = 3;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "全部";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // textBoxKeyword
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(227, 21);
-            this.textBox1.TabIndex = 0;
+            this.textBoxKeyword.Location = new System.Drawing.Point(12, 20);
+            this.textBoxKeyword.MaxLength = 63;
+            this.textBoxKeyword.Name = "textBoxKeyword";
+            this.textBoxKeyword.Size = new System.Drawing.Size(227, 21);
+            this.textBoxKeyword.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(403, 21);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(68, 47);
-            this.button1.TabIndex = 3;
+            this.button1.TabIndex = 5;
             this.button1.Text = "查询";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // dateTimePickerUpdateOn
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 47);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(227, 21);
-            this.dateTimePicker1.TabIndex = 2;
+            this.dateTimePickerUpdateOn.Location = new System.Drawing.Point(12, 47);
+            this.dateTimePickerUpdateOn.Name = "dateTimePickerUpdateOn";
+            this.dateTimePickerUpdateOn.Size = new System.Drawing.Size(227, 21);
+            this.dateTimePickerUpdateOn.TabIndex = 2;
             // 
-            // comboBox1
+            // comboBoxState
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(262, 21);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(126, 20);
-            this.comboBox1.TabIndex = 1;
+            this.comboBoxState.FormattingEnabled = true;
+            this.comboBoxState.Location = new System.Drawing.Point(262, 21);
+            this.comboBoxState.Name = "comboBoxState";
+            this.comboBoxState.Size = new System.Drawing.Size(126, 20);
+            this.comboBoxState.TabIndex = 1;
             // 
             // groupBox2
             // 
@@ -234,7 +236,7 @@
             this.richTextBox2.Location = new System.Drawing.Point(3, 17);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(288, 268);
-            this.richTextBox2.TabIndex = 1;
+            this.richTextBox2.TabIndex = 0;
             this.richTextBox2.Text = "";
             // 
             // groupBox1
@@ -287,16 +289,16 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerUpdateOn;
+        private System.Windows.Forms.ComboBox comboBoxState;
+        private System.Windows.Forms.TextBox textBoxKeyword;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonSend;
+        private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;

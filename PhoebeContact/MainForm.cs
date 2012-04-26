@@ -19,13 +19,23 @@ namespace PhoebeContact
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            dateTimePickerUpdateOn.Value = DateTime.Today.AddDays(-30);
+
             Database db = DbAccess.GetInstance();
             var objs = db.Query<State>("SELECT * FROM State");
 
+            comboBoxState.Items.Add("全部");
             foreach (var obj in objs)
             {
-                string name = obj.name;
+                comboBoxState.Items.Add(obj);
             }
+            comboBoxState.SelectedIndex = 0;
+        }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            CustomerForm form = new CustomerForm();
+            form.ShowDialog();
         }
     }
 }

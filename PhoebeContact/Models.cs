@@ -9,6 +9,11 @@ namespace PhoebeContact
         public string name { get; set; }
         public int period { get; set; }
         public int total { get; set; }
+
+        public override string ToString()
+        {
+            return name;
+        }
     }
 
     public class Customer
