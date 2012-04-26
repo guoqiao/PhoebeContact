@@ -6,9 +6,7 @@ from django.db import models
 class State(models.Model):
     name = models.CharField(default="",max_length=63)
     period = models.IntegerField(default=7)
-    total = models.IntegerField(default=1)
-    count = models.IntegerField(default=0)
-    tmplate = models.CharField(default="",max_length=63)
+    total = models.IntegerField(default=1)  
     
     class Meta:
         db_table = 'State'
@@ -30,6 +28,7 @@ class Customer(models.Model):
     note = models.TextField(default="",max_length=2047)
     
     state = models.ForeignKey(State)
+    count = models.IntegerField(default=0)
     
     class Meta:
         db_table = 'Customer'

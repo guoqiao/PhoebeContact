@@ -5,8 +5,6 @@ import os
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 HERE = os.path.abspath(os.path.dirname(__file__))
-ROOT = HERE
-ABSPATH = lambda path: os.path.join(HERE,path) 
 
 ADMINS = (
     ('Guo Qiao', 'guoqiao@gmail.com'),
@@ -17,7 +15,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': ABSPATH('sqlite.db'),                      # Or path to database file if using sqlite3.
+        'NAME': os.path.join(HERE, '../bin/sqlite.db'),                      # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.

@@ -1,0 +1,47 @@
+[
+    {
+        "pk": 1, 
+        "model": "main.state", 
+        "fields": {
+            "total": 1, 
+            "name": "A", 
+            "period": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "main.state", 
+        "fields": {
+            "total": 1, 
+            "name": "B", 
+            "period": 4
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "main.state", 
+        "fields": {
+            "total": 4, 
+            "name": "C", 
+            "period": 7
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "main.state", 
+        "fields": {
+            "total": 12, 
+            "name": "D", 
+            "period": 30
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "main.state", 
+        "fields": {
+            "total": 0, 
+            "name": "E", 
+            "period": 0
+        }
+    }
+]
