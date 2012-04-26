@@ -43,6 +43,21 @@ namespace PhoebeContact
             {
                 return;//new
             }
+
+            textBoxName.Text = m_customer.name;
+            textBoxSite.Text = m_customer.site;
+            textBoxAddr.Text = m_customer.addr;
+            textBoxCountry.Text = m_customer.country;
+            textBoxPhone.Text = m_customer.phone;
+            textBoxContact.Text = m_customer.contact;
+            textBoxMobile.Text = m_customer.mobile;
+            textBoxEmail.Text = m_customer.email;
+
+            dateTimePickerCreateOn.Value = m_customer.create_on;
+            dateTimePickerUpdateOn.Value = m_customer.update_on;
+
+            richTextBoxNote.Text = m_customer.note;
+            comboBoxState.SelectedIndex = m_customer.state_id - 1;
         }
 
         private void buttonOk_Click(object sender, EventArgs e)
@@ -52,6 +67,7 @@ namespace PhoebeContact
                 m_customer = new Customer();
             }
 
+            //TODO: check input
             m_customer.name = textBoxName.Text.Trim();
             m_customer.site = textBoxSite.Text.Trim();
             m_customer.addr = textBoxAddr.Text.Trim();
@@ -65,9 +81,13 @@ namespace PhoebeContact
             m_customer.update_on = dateTimePickerUpdateOn.Value;
 
             m_customer.note = richTextBoxNote.Text.Trim();
-            m_customer.state_id = (comboBoxState.SelectedItem as State).id;
+            m_customer.state_id = comboBoxState.SelectedIndex + 1;
 
             m_customer.count = 0;
+
+            DbAccess.GetInstance().Save(m_customer);
+
+            DialogResult = DialogResult.OK;
         }
     }
 }

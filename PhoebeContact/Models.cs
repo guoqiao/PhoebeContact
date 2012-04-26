@@ -2,6 +2,8 @@
 
 namespace PhoebeContact
 {
+    [PetaPoco.TableName("State")]
+    [PetaPoco.PrimaryKey("id")]
     public class State
     {
         public int id { get; set; }
@@ -16,6 +18,8 @@ namespace PhoebeContact
         }
     }
 
+    [PetaPoco.TableName("Customer")]
+    [PetaPoco.PrimaryKey("id")]
     public class Customer
     {
         public int id { get; set; }

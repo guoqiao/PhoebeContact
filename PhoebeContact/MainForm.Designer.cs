@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listViewCustomer = new System.Windows.Forms.ListView();
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
@@ -67,7 +67,7 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.listView1);
+            this.splitContainer1.Panel1.Controls.Add(this.listViewCustomer);
             this.splitContainer1.Panel1.Controls.Add(this.panel1);
             this.splitContainer1.Panel1.Controls.Add(this.groupBox3);
             // 
@@ -79,24 +79,25 @@
             this.splitContainer1.SplitterDistance = 484;
             this.splitContainer1.TabIndex = 0;
             // 
-            // listView1
+            // listViewCustomer
             // 
-            this.listView1.CheckBoxes = true;
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listViewCustomer.CheckBoxes = true;
+            this.listViewCustomer.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4,
             this.columnHeader5});
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(0, 85);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(482, 437);
-            this.listView1.Sorting = System.Windows.Forms.SortOrder.Descending;
-            this.listView1.TabIndex = 1;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listViewCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listViewCustomer.FullRowSelect = true;
+            this.listViewCustomer.GridLines = true;
+            this.listViewCustomer.Location = new System.Drawing.Point(0, 85);
+            this.listViewCustomer.Name = "listViewCustomer";
+            this.listViewCustomer.Size = new System.Drawing.Size(482, 437);
+            this.listViewCustomer.Sorting = System.Windows.Forms.SortOrder.Descending;
+            this.listViewCustomer.TabIndex = 1;
+            this.listViewCustomer.UseCompatibleStateImageBehavior = false;
+            this.listViewCustomer.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
@@ -114,7 +115,7 @@
             // columnHeader4
             // 
             this.columnHeader4.Text = "邮箱";
-            this.columnHeader4.Width = 120;
+            this.columnHeader4.Width = 110;
             // 
             // columnHeader5
             // 
@@ -299,7 +300,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonSend;
         private System.Windows.Forms.Button buttonAdd;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listViewCustomer;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
