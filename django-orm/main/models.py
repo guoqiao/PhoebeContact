@@ -9,6 +9,9 @@ class State(models.Model):
     total = models.IntegerField(default=1)
     count = models.IntegerField(default=0)
     tmplate = models.CharField(default="",max_length=63)
+    
+    class Meta:
+        db_table = 'State'
 
 class Customer(models.Model):
     name = models.CharField(default="",max_length=63)
@@ -25,3 +28,8 @@ class Customer(models.Model):
     update_on = models.DateField()
     
     note = models.TextField(default="",max_length=2047)
+    
+    state = models.ForeignKey(State)
+    
+    class Meta:
+        db_table = 'Customer'
