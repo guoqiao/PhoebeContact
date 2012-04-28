@@ -82,6 +82,7 @@
     </Compile>
     <Compile Include="Models.cs" />
     <Compile Include="PetaPoco.cs" />
+    <Compile Include="Popup.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CustomerForm.resx">
@@ -111,7 +112,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="QMessageBox.cs" />
     <Compile Include="StringComparer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
