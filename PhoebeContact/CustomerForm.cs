@@ -55,9 +55,12 @@ namespace PhoebeContact
 
             dateTimePickerCreateOn.Value = m_customer.create_on;
             dateTimePickerUpdateOn.Value = m_customer.update_on;
+            numericUpDownInquiry.Value = m_customer.inquiry;
+            numericUpDownBrowse.Value = m_customer.browse;
 
             richTextBoxNote.Text = m_customer.note;
             comboBoxState.SelectedIndex = m_customer.state_id - 1;
+            numericUpDownCount.Value = (comboBoxState.SelectedItem as State).total;
         }
 
         private bool CheckInput(string input, string name)
@@ -81,35 +84,51 @@ namespace PhoebeContact
             //TODO: check input
             m_customer.name = textBoxName.Text.Trim();
 
-            if (!CheckInput(m_customer.name, "客户名称"))
+            if (!CheckInput(m_customer.name, "公司"))
             {
                 return;
             }
+
+            m_customer.country = textBoxCountry.Text.Trim();
 
             m_customer.site = textBoxSite.Text.Trim();
 
             m_customer.addr = textBoxAddr.Text.Trim();
-            m_customer.country = textBoxCountry.Text.Trim();
+            
             m_customer.phone = textBoxPhone.Text.Trim();
+
             m_customer.contact = textBoxContact.Text.Trim();
-            if (!CheckInput(m_customer.name, "联系人"))
+
+            if (!CheckInput(m_customer.contact, "姓名"))
             {
                 return;
             }
+
+            m_customer.skype = textBoxSkype.Text.Trim();
+
             m_customer.mobile = textBoxMobile.Text.Trim();
             m_customer.email = textBoxEmail.Text.Trim();
+
+            m_customer.inquiry = (int)numericUpDownInquiry.Value;
+            m_customer.browse  = (int)numericUpDownBrowse.Value;
 
             m_customer.create_on = dateTimePickerCreateOn.Value;
             m_customer.update_on = dateTimePickerUpdateOn.Value;
 
             m_customer.note = richTextBoxNote.Text.Trim();
             m_customer.state_id = comboBoxState.SelectedIndex + 1;
+            m_customer.count = (int)numericUpDownCount.Value;
 
             m_customer.count = 0;
 
             DbAccess.GetInstance().Save(m_customer);
 
             DialogResult = DialogResult.OK;
+        }
+
+        private void comboBoxState_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            numericUpDownCount.Value = (comboBoxState.SelectedItem as State).total;
         }
     }
 }

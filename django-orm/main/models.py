@@ -44,7 +44,7 @@ class Customer(models.Model):
     update_on = models.DateField()
     
     state = models.ForeignKey(State)
-    count = models.IntegerField(default=0)
+    count = models.IntegerField(default=4)
     note = models.TextField(default="",max_length=2047)
     
     

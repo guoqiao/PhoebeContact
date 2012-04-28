@@ -60,9 +60,11 @@
             this.numericUpDownBrowse = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownInquiry = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
+            this.numericUpDownCount = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBrowse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownInquiry)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCount)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -87,7 +89,7 @@
             this.textBoxSite.Location = new System.Drawing.Point(61, 47);
             this.textBoxSite.MaxLength = 63;
             this.textBoxSite.Name = "textBoxSite";
-            this.textBoxSite.Size = new System.Drawing.Size(374, 21);
+            this.textBoxSite.Size = new System.Drawing.Size(372, 21);
             this.textBoxSite.TabIndex = 5;
             // 
             // label2
@@ -104,7 +106,7 @@
             this.textBoxAddr.Location = new System.Drawing.Point(61, 74);
             this.textBoxAddr.MaxLength = 127;
             this.textBoxAddr.Name = "textBoxAddr";
-            this.textBoxAddr.Size = new System.Drawing.Size(374, 21);
+            this.textBoxAddr.Size = new System.Drawing.Size(372, 21);
             this.textBoxAddr.TabIndex = 7;
             // 
             // label3
@@ -118,7 +120,7 @@
             // 
             // textBoxCountry
             // 
-            this.textBoxCountry.Location = new System.Drawing.Point(387, 18);
+            this.textBoxCountry.Location = new System.Drawing.Point(385, 18);
             this.textBoxCountry.MaxLength = 6;
             this.textBoxCountry.Name = "textBoxCountry";
             this.textBoxCountry.Size = new System.Drawing.Size(48, 21);
@@ -135,11 +137,11 @@
             // 
             // textBoxPhone
             // 
-            this.textBoxPhone.Location = new System.Drawing.Point(280, 162);
+            this.textBoxPhone.Location = new System.Drawing.Point(278, 162);
             this.textBoxPhone.MaxLength = 63;
             this.textBoxPhone.Name = "textBoxPhone";
             this.textBoxPhone.Size = new System.Drawing.Size(155, 21);
-            this.textBoxPhone.TabIndex = 19;
+            this.textBoxPhone.TabIndex = 20;
             // 
             // label5
             // 
@@ -147,7 +149,7 @@
             this.label5.Location = new System.Drawing.Point(246, 166);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(29, 12);
-            this.label5.TabIndex = 18;
+            this.label5.TabIndex = 19;
             this.label5.Text = "电话";
             // 
             // textBoxContact
@@ -173,7 +175,7 @@
             this.textBoxMobile.MaxLength = 63;
             this.textBoxMobile.Name = "textBoxMobile";
             this.textBoxMobile.Size = new System.Drawing.Size(157, 21);
-            this.textBoxMobile.TabIndex = 17;
+            this.textBoxMobile.TabIndex = 18;
             // 
             // label7
             // 
@@ -181,7 +183,7 @@
             this.label7.Location = new System.Drawing.Point(29, 163);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(29, 12);
-            this.label7.TabIndex = 16;
+            this.label7.TabIndex = 17;
             this.label7.Text = "手机";
             // 
             // textBoxEmail
@@ -207,7 +209,7 @@
             this.label9.Location = new System.Drawing.Point(29, 194);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(29, 12);
-            this.label9.TabIndex = 20;
+            this.label9.TabIndex = 21;
             this.label9.Text = "首次";
             // 
             // comboBoxState
@@ -216,8 +218,9 @@
             this.comboBoxState.FormattingEnabled = true;
             this.comboBoxState.Location = new System.Drawing.Point(280, 133);
             this.comboBoxState.Name = "comboBoxState";
-            this.comboBoxState.Size = new System.Drawing.Size(155, 20);
+            this.comboBoxState.Size = new System.Drawing.Size(91, 20);
             this.comboBoxState.TabIndex = 15;
+            this.comboBoxState.SelectedIndexChanged += new System.EventHandler(this.comboBoxState_SelectedIndexChanged);
             // 
             // groupBox1
             // 
@@ -225,7 +228,7 @@
             this.groupBox1.Location = new System.Drawing.Point(29, 255);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(406, 304);
-            this.groupBox1.TabIndex = 28;
+            this.groupBox1.TabIndex = 29;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "备注";
             // 
@@ -245,22 +248,22 @@
             this.label10.Location = new System.Drawing.Point(29, 222);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(29, 12);
-            this.label10.TabIndex = 22;
+            this.label10.TabIndex = 23;
             this.label10.Text = "最近";
             // 
             // dateTimePickerCreateOn
             // 
-            this.dateTimePickerCreateOn.Location = new System.Drawing.Point(62, 190);
+            this.dateTimePickerCreateOn.Location = new System.Drawing.Point(61, 190);
             this.dateTimePickerCreateOn.Name = "dateTimePickerCreateOn";
-            this.dateTimePickerCreateOn.Size = new System.Drawing.Size(200, 21);
-            this.dateTimePickerCreateOn.TabIndex = 21;
+            this.dateTimePickerCreateOn.Size = new System.Drawing.Size(240, 21);
+            this.dateTimePickerCreateOn.TabIndex = 22;
             // 
             // dateTimePickerUpdateOn
             // 
-            this.dateTimePickerUpdateOn.Location = new System.Drawing.Point(62, 218);
+            this.dateTimePickerUpdateOn.Location = new System.Drawing.Point(61, 218);
             this.dateTimePickerUpdateOn.Name = "dateTimePickerUpdateOn";
-            this.dateTimePickerUpdateOn.Size = new System.Drawing.Size(200, 21);
-            this.dateTimePickerUpdateOn.TabIndex = 23;
+            this.dateTimePickerUpdateOn.Size = new System.Drawing.Size(240, 21);
+            this.dateTimePickerUpdateOn.TabIndex = 24;
             // 
             // label11
             // 
@@ -277,7 +280,7 @@
             this.buttonOk.Location = new System.Drawing.Point(118, 577);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(75, 23);
-            this.buttonOk.TabIndex = 29;
+            this.buttonOk.TabIndex = 30;
             this.buttonOk.Text = "确定";
             this.buttonOk.UseVisualStyleBackColor = true;
             this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
@@ -289,13 +292,13 @@
             this.buttonCancel.Location = new System.Drawing.Point(282, 577);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
-            this.buttonCancel.TabIndex = 30;
+            this.buttonCancel.TabIndex = 31;
             this.buttonCancel.Text = "取消";
             this.buttonCancel.UseVisualStyleBackColor = true;
             // 
             // textBoxSkype
             // 
-            this.textBoxSkype.Location = new System.Drawing.Point(280, 103);
+            this.textBoxSkype.Location = new System.Drawing.Point(278, 103);
             this.textBoxSkype.MaxLength = 63;
             this.textBoxSkype.Name = "textBoxSkype";
             this.textBoxSkype.Size = new System.Drawing.Size(155, 21);
@@ -316,22 +319,22 @@
             this.label13.Location = new System.Drawing.Point(307, 195);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(29, 12);
-            this.label13.TabIndex = 24;
+            this.label13.TabIndex = 25;
             this.label13.Text = "浏览";
             // 
             // numericUpDownBrowse
             // 
-            this.numericUpDownBrowse.Location = new System.Drawing.Point(339, 190);
+            this.numericUpDownBrowse.Location = new System.Drawing.Point(341, 190);
             this.numericUpDownBrowse.Name = "numericUpDownBrowse";
             this.numericUpDownBrowse.Size = new System.Drawing.Size(92, 21);
-            this.numericUpDownBrowse.TabIndex = 25;
+            this.numericUpDownBrowse.TabIndex = 26;
             // 
             // numericUpDownInquiry
             // 
-            this.numericUpDownInquiry.Location = new System.Drawing.Point(339, 218);
+            this.numericUpDownInquiry.Location = new System.Drawing.Point(341, 218);
             this.numericUpDownInquiry.Name = "numericUpDownInquiry";
             this.numericUpDownInquiry.Size = new System.Drawing.Size(92, 21);
-            this.numericUpDownInquiry.TabIndex = 27;
+            this.numericUpDownInquiry.TabIndex = 28;
             // 
             // label14
             // 
@@ -339,8 +342,15 @@
             this.label14.Location = new System.Drawing.Point(307, 223);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(29, 12);
-            this.label14.TabIndex = 26;
+            this.label14.TabIndex = 27;
             this.label14.Text = "询盘";
+            // 
+            // numericUpDownCount
+            // 
+            this.numericUpDownCount.Location = new System.Drawing.Point(377, 133);
+            this.numericUpDownCount.Name = "numericUpDownCount";
+            this.numericUpDownCount.Size = new System.Drawing.Size(56, 21);
+            this.numericUpDownCount.TabIndex = 16;
             // 
             // CustomerForm
             // 
@@ -349,6 +359,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
             this.ClientSize = new System.Drawing.Size(474, 612);
+            this.Controls.Add(this.numericUpDownCount);
             this.Controls.Add(this.numericUpDownInquiry);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.numericUpDownBrowse);
@@ -390,6 +401,7 @@
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBrowse)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownInquiry)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -429,5 +441,6 @@
         private System.Windows.Forms.NumericUpDown numericUpDownBrowse;
         private System.Windows.Forms.NumericUpDown numericUpDownInquiry;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.NumericUpDown numericUpDownCount;
     }
 }
