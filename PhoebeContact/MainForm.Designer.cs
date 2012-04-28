@@ -35,7 +35,9 @@
             this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.checkBoxAll = new System.Windows.Forms.CheckBox();
             this.buttonSend = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -44,23 +46,21 @@
             this.textBoxKeyword = new System.Windows.Forms.TextBox();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.comboBoxState = new System.Windows.Forms.ComboBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.checkBoxAll = new System.Windows.Forms.CheckBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.richTextBoxInfo = new System.Windows.Forms.RichTextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.richTextBoxEmail = new System.Windows.Forms.RichTextBox();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -97,16 +97,18 @@
             this.listViewCustomer.FullRowSelect = true;
             this.listViewCustomer.GridLines = true;
             this.listViewCustomer.Location = new System.Drawing.Point(0, 50);
+            this.listViewCustomer.MultiSelect = false;
             this.listViewCustomer.Name = "listViewCustomer";
             this.listViewCustomer.Size = new System.Drawing.Size(482, 472);
             this.listViewCustomer.Sorting = System.Windows.Forms.SortOrder.Descending;
             this.listViewCustomer.TabIndex = 1;
             this.listViewCustomer.UseCompatibleStateImageBehavior = false;
             this.listViewCustomer.View = System.Windows.Forms.View.Details;
+            this.listViewCustomer.SelectedIndexChanged += new System.EventHandler(this.listViewCustomer_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "姓名";
+            this.columnHeader1.Text = "公司";
             this.columnHeader1.Width = 120;
             // 
             // columnHeader2
@@ -119,13 +121,18 @@
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "邮箱";
+            this.columnHeader4.Text = "姓名";
             this.columnHeader4.Width = 110;
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "公司";
+            this.columnHeader5.Text = "邮箱";
             this.columnHeader5.Width = 120;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "最近";
+            this.columnHeader6.Width = 120;
             // 
             // panel1
             // 
@@ -137,6 +144,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(482, 38);
             this.panel1.TabIndex = 2;
+            // 
+            // checkBoxAll
+            // 
+            this.checkBoxAll.AutoSize = true;
+            this.checkBoxAll.Checked = true;
+            this.checkBoxAll.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxAll.Location = new System.Drawing.Point(11, 12);
+            this.checkBoxAll.Name = "checkBoxAll";
+            this.checkBoxAll.Size = new System.Drawing.Size(66, 16);
+            this.checkBoxAll.TabIndex = 2;
+            this.checkBoxAll.Text = "全选(&A)";
+            this.checkBoxAll.UseVisualStyleBackColor = true;
+            this.checkBoxAll.CheckedChanged += new System.EventHandler(this.checkBoxAll_CheckedChanged);
             // 
             // buttonSend
             // 
@@ -228,51 +248,6 @@
             this.comboBoxState.Size = new System.Drawing.Size(82, 20);
             this.comboBoxState.TabIndex = 1;
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.richTextBox2);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(0, 0);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(294, 288);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "邮件预览";
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox2.Location = new System.Drawing.Point(3, 17);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(288, 268);
-            this.richTextBox2.TabIndex = 0;
-            this.richTextBox2.Text = "";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.richTextBox1);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(294, 268);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "联系人信息";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(3, 17);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(288, 248);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "最近联系";
-            this.columnHeader6.Width = 120;
-            // 
             // splitContainer2
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -292,17 +267,45 @@
             this.splitContainer2.SplitterDistance = 268;
             this.splitContainer2.TabIndex = 2;
             // 
-            // checkBoxAll
+            // groupBox1
             // 
-            this.checkBoxAll.AutoSize = true;
-            this.checkBoxAll.Checked = true;
-            this.checkBoxAll.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxAll.Location = new System.Drawing.Point(11, 11);
-            this.checkBoxAll.Name = "checkBoxAll";
-            this.checkBoxAll.Size = new System.Drawing.Size(66, 16);
-            this.checkBoxAll.TabIndex = 2;
-            this.checkBoxAll.Text = "全选(&A)";
-            this.checkBoxAll.UseVisualStyleBackColor = true;
+            this.groupBox1.Controls.Add(this.richTextBoxInfo);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(294, 268);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "客户信息";
+            // 
+            // richTextBoxInfo
+            // 
+            this.richTextBoxInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBoxInfo.Location = new System.Drawing.Point(3, 17);
+            this.richTextBoxInfo.Name = "richTextBoxInfo";
+            this.richTextBoxInfo.Size = new System.Drawing.Size(288, 248);
+            this.richTextBoxInfo.TabIndex = 0;
+            this.richTextBoxInfo.Text = "";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.richTextBoxEmail);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.Location = new System.Drawing.Point(0, 0);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(294, 288);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "邮件预览";
+            // 
+            // richTextBoxEmail
+            // 
+            this.richTextBoxEmail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBoxEmail.Location = new System.Drawing.Point(3, 17);
+            this.richTextBoxEmail.Name = "richTextBoxEmail";
+            this.richTextBoxEmail.Size = new System.Drawing.Size(288, 268);
+            this.richTextBoxEmail.TabIndex = 0;
+            this.richTextBoxEmail.Text = "";
             // 
             // MainForm
             // 
@@ -322,11 +325,11 @@
             this.panel1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
             this.splitContainer2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -336,8 +339,8 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox richTextBoxEmail;
+        private System.Windows.Forms.RichTextBox richTextBoxInfo;
         private System.Windows.Forms.ComboBox comboBoxState;
         private System.Windows.Forms.TextBox textBoxKeyword;
         private System.Windows.Forms.Button buttonSearch;

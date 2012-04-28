@@ -28,15 +28,15 @@ class State(models.Model):
 
 class Customer(models.Model):
     name = models.CharField(default="",max_length=63)
+    country = models.CharField(default="",max_length=63)
     site = models.URLField(default="",max_length=63)
     addr = models.CharField(default="",max_length=63)
-    country = models.CharField(default="",max_length=63)
-    phone = models.CharField(default="",max_length=63)
     
     contact = models.CharField(default="",max_length=63)
-    mobile = models.CharField(default="",max_length=63)
-    email = models.EmailField(default="",max_length=63)
     skype = models.CharField(default="",max_length=63)
+    email = models.EmailField(default="",max_length=63)
+    mobile = models.CharField(default="",max_length=63)
+    phone = models.CharField(default="",max_length=63)
     browse = models.IntegerField(default=0)
     inquiry = models.IntegerField(default=0)
     
