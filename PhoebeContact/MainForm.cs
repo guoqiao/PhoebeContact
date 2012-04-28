@@ -19,8 +19,6 @@ namespace PhoebeContact
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            dateTimePickerUpdateOn.Value = DateTime.Today.AddDays(-30);
-
             Database db = DbAccess.GetInstance();
             var objs = db.Query<State>("SELECT * FROM State");
 
@@ -54,6 +52,7 @@ namespace PhoebeContact
                 item.SubItems.Add(obj.state_id.ToString());
                 item.SubItems.Add(obj.email);
                 item.SubItems.Add(obj.name);
+                item.SubItems.Add(obj.update_on.ToShortDateString());
                 item.Checked = true;
                 listViewCustomer.Items.Add(item);
             }

@@ -3,6 +3,21 @@
 
 from django.db import models
 
+class Country(models.Model):
+    abbr = models.CharField(default="",max_length=63)
+    chinese = models.CharField(default="",max_length=63)
+    english = models.CharField(default="",max_length=63)
+    
+    area = models.CharField(default="",max_length=63)
+    code = models.CharField(default="",max_length=63)
+    language = models.CharField(default="",max_length=63)
+    google = models.URLField(default="",max_length=63)
+    
+    hourdiff = models.IntegerField(default=-12) 
+    
+    class Meta:
+        db_table = 'Country'
+
 class State(models.Model):
     name = models.CharField(default="",max_length=63)
     period = models.IntegerField(default=7)
@@ -21,14 +36,17 @@ class Customer(models.Model):
     contact = models.CharField(default="",max_length=63)
     mobile = models.CharField(default="",max_length=63)
     email = models.EmailField(default="",max_length=63)
+    skype = models.CharField(default="",max_length=63)
+    browse = models.IntegerField(default=0)
+    inquiry = models.IntegerField(default=0)
     
     create_on = models.DateField()
     update_on = models.DateField()
     
-    note = models.TextField(default="",max_length=2047)
-    
     state = models.ForeignKey(State)
     count = models.IntegerField(default=0)
+    note = models.TextField(default="",max_length=2047)
+    
     
     class Meta:
         db_table = 'Customer'

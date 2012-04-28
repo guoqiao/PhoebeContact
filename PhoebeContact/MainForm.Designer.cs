@@ -43,12 +43,14 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.textBoxKeyword = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePickerUpdateOn = new System.Windows.Forms.DateTimePicker();
             this.comboBoxState = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.checkBoxAll = new System.Windows.Forms.CheckBox();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -56,6 +58,9 @@
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.Panel2.SuspendLayout();
+            this.splitContainer2.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -73,8 +78,7 @@
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.groupBox2);
-            this.splitContainer1.Panel2.Controls.Add(this.groupBox1);
+            this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
             this.splitContainer1.Size = new System.Drawing.Size(784, 562);
             this.splitContainer1.SplitterDistance = 484;
             this.splitContainer1.TabIndex = 0;
@@ -87,13 +91,14 @@
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4,
-            this.columnHeader5});
+            this.columnHeader5,
+            this.columnHeader6});
             this.listViewCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listViewCustomer.FullRowSelect = true;
             this.listViewCustomer.GridLines = true;
-            this.listViewCustomer.Location = new System.Drawing.Point(0, 85);
+            this.listViewCustomer.Location = new System.Drawing.Point(0, 50);
             this.listViewCustomer.Name = "listViewCustomer";
-            this.listViewCustomer.Size = new System.Drawing.Size(482, 437);
+            this.listViewCustomer.Size = new System.Drawing.Size(482, 472);
             this.listViewCustomer.Sorting = System.Windows.Forms.SortOrder.Descending;
             this.listViewCustomer.TabIndex = 1;
             this.listViewCustomer.UseCompatibleStateImageBehavior = false;
@@ -124,6 +129,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.checkBoxAll);
             this.panel1.Controls.Add(this.buttonSend);
             this.panel1.Controls.Add(this.buttonAdd);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -134,7 +140,8 @@
             // 
             // buttonSend
             // 
-            this.buttonSend.Location = new System.Drawing.Point(277, 9);
+            this.buttonSend.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSend.Location = new System.Drawing.Point(369, 9);
             this.buttonSend.Name = "buttonSend";
             this.buttonSend.Size = new System.Drawing.Size(75, 23);
             this.buttonSend.TabIndex = 1;
@@ -143,7 +150,8 @@
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(97, 9);
+            this.buttonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAdd.Location = new System.Drawing.Point(228, 9);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(75, 23);
             this.buttonAdd.TabIndex = 0;
@@ -157,19 +165,19 @@
             this.groupBox3.Controls.Add(this.radioButton1);
             this.groupBox3.Controls.Add(this.textBoxKeyword);
             this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Controls.Add(this.dateTimePickerUpdateOn);
             this.groupBox3.Controls.Add(this.comboBoxState);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox3.Location = new System.Drawing.Point(0, 0);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(482, 85);
+            this.groupBox3.Size = new System.Drawing.Size(482, 50);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             // 
             // radioButton2
             // 
+            this.radioButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(328, 52);
+            this.radioButton2.Location = new System.Drawing.Point(350, 21);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(47, 16);
             this.radioButton2.TabIndex = 4;
@@ -178,9 +186,10 @@
             // 
             // radioButton1
             // 
+            this.radioButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(262, 52);
+            this.radioButton1.Location = new System.Drawing.Point(297, 21);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(47, 16);
             this.radioButton1.TabIndex = 3;
@@ -190,41 +199,39 @@
             // 
             // textBoxKeyword
             // 
-            this.textBoxKeyword.Location = new System.Drawing.Point(12, 20);
+            this.textBoxKeyword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxKeyword.Location = new System.Drawing.Point(11, 16);
             this.textBoxKeyword.MaxLength = 63;
             this.textBoxKeyword.Name = "textBoxKeyword";
-            this.textBoxKeyword.Size = new System.Drawing.Size(227, 21);
+            this.textBoxKeyword.Size = new System.Drawing.Size(179, 21);
             this.textBoxKeyword.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(403, 21);
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(403, 18);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(68, 47);
+            this.button1.Size = new System.Drawing.Size(68, 21);
             this.button1.TabIndex = 5;
             this.button1.Text = "查询";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // dateTimePickerUpdateOn
-            // 
-            this.dateTimePickerUpdateOn.Location = new System.Drawing.Point(12, 47);
-            this.dateTimePickerUpdateOn.Name = "dateTimePickerUpdateOn";
-            this.dateTimePickerUpdateOn.Size = new System.Drawing.Size(227, 21);
-            this.dateTimePickerUpdateOn.TabIndex = 2;
-            // 
             // comboBoxState
             // 
+            this.comboBoxState.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxState.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxState.FormattingEnabled = true;
-            this.comboBoxState.Location = new System.Drawing.Point(262, 21);
+            this.comboBoxState.Location = new System.Drawing.Point(200, 17);
             this.comboBoxState.Name = "comboBoxState";
-            this.comboBoxState.Size = new System.Drawing.Size(126, 20);
+            this.comboBoxState.Size = new System.Drawing.Size(82, 20);
             this.comboBoxState.TabIndex = 1;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.richTextBox2);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(0, 272);
+            this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(294, 288);
             this.groupBox2.TabIndex = 1;
@@ -243,10 +250,10 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.richTextBox1);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(294, 272);
+            this.groupBox1.Size = new System.Drawing.Size(294, 268);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "联系人信息";
@@ -256,9 +263,45 @@
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox1.Location = new System.Drawing.Point(3, 17);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(288, 252);
+            this.richTextBox1.Size = new System.Drawing.Size(288, 248);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "最近联系";
+            this.columnHeader6.Width = 120;
+            // 
+            // splitContainer2
+            // 
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
+            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer2.Name = "splitContainer2";
+            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer2.Panel1
+            // 
+            this.splitContainer2.Panel1.Controls.Add(this.groupBox1);
+            // 
+            // splitContainer2.Panel2
+            // 
+            this.splitContainer2.Panel2.Controls.Add(this.groupBox2);
+            this.splitContainer2.Size = new System.Drawing.Size(294, 560);
+            this.splitContainer2.SplitterDistance = 268;
+            this.splitContainer2.TabIndex = 2;
+            // 
+            // checkBoxAll
+            // 
+            this.checkBoxAll.AutoSize = true;
+            this.checkBoxAll.Checked = true;
+            this.checkBoxAll.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxAll.Location = new System.Drawing.Point(11, 11);
+            this.checkBoxAll.Name = "checkBoxAll";
+            this.checkBoxAll.Size = new System.Drawing.Size(48, 16);
+            this.checkBoxAll.TabIndex = 2;
+            this.checkBoxAll.Text = "全选";
+            this.checkBoxAll.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -266,19 +309,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 562);
             this.Controls.Add(this.splitContainer1);
-            this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PhoebeContact";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel2.ResumeLayout(false);
+            this.splitContainer2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -290,7 +337,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePickerUpdateOn;
         private System.Windows.Forms.ComboBox comboBoxState;
         private System.Windows.Forms.TextBox textBoxKeyword;
         private System.Windows.Forms.Button button1;
@@ -306,6 +352,9 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.SplitContainer splitContainer2;
+        private System.Windows.Forms.CheckBox checkBoxAll;
     }
 }
 
