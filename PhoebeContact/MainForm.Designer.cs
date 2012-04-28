@@ -39,10 +39,10 @@
             this.buttonSend = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButtonToday = new System.Windows.Forms.RadioButton();
+            this.radioButtonAll = new System.Windows.Forms.RadioButton();
             this.textBoxKeyword = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonSearch = new System.Windows.Forms.Button();
             this.comboBoxState = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
@@ -145,7 +145,7 @@
             this.buttonSend.Name = "buttonSend";
             this.buttonSend.Size = new System.Drawing.Size(75, 23);
             this.buttonSend.TabIndex = 1;
-            this.buttonSend.Text = "发送";
+            this.buttonSend.Text = "发送(&S)";
             this.buttonSend.UseVisualStyleBackColor = true;
             // 
             // buttonAdd
@@ -155,16 +155,16 @@
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(75, 23);
             this.buttonAdd.TabIndex = 0;
-            this.buttonAdd.Text = "新建";
+            this.buttonAdd.Text = "新建(&N)";
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.radioButton2);
-            this.groupBox3.Controls.Add(this.radioButton1);
+            this.groupBox3.Controls.Add(this.radioButtonToday);
+            this.groupBox3.Controls.Add(this.radioButtonAll);
             this.groupBox3.Controls.Add(this.textBoxKeyword);
-            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Controls.Add(this.buttonSearch);
             this.groupBox3.Controls.Add(this.comboBoxState);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox3.Location = new System.Drawing.Point(0, 0);
@@ -173,29 +173,29 @@
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             // 
-            // radioButton2
+            // radioButtonToday
             // 
-            this.radioButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(350, 21);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(47, 16);
-            this.radioButton2.TabIndex = 4;
-            this.radioButton2.Text = "今天";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButtonToday.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioButtonToday.AutoSize = true;
+            this.radioButtonToday.Location = new System.Drawing.Point(350, 21);
+            this.radioButtonToday.Name = "radioButtonToday";
+            this.radioButtonToday.Size = new System.Drawing.Size(47, 16);
+            this.radioButtonToday.TabIndex = 4;
+            this.radioButtonToday.Text = "今天";
+            this.radioButtonToday.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // radioButtonAll
             // 
-            this.radioButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(297, 21);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(47, 16);
-            this.radioButton1.TabIndex = 3;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "全部";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButtonAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioButtonAll.AutoSize = true;
+            this.radioButtonAll.Checked = true;
+            this.radioButtonAll.Location = new System.Drawing.Point(297, 21);
+            this.radioButtonAll.Name = "radioButtonAll";
+            this.radioButtonAll.Size = new System.Drawing.Size(47, 16);
+            this.radioButtonAll.TabIndex = 3;
+            this.radioButtonAll.TabStop = true;
+            this.radioButtonAll.Text = "全部";
+            this.radioButtonAll.UseVisualStyleBackColor = true;
             // 
             // textBoxKeyword
             // 
@@ -207,15 +207,16 @@
             this.textBoxKeyword.Size = new System.Drawing.Size(179, 21);
             this.textBoxKeyword.TabIndex = 0;
             // 
-            // button1
+            // buttonSearch
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(403, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(68, 21);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "查询";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSearch.Location = new System.Drawing.Point(403, 18);
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(68, 21);
+            this.buttonSearch.TabIndex = 5;
+            this.buttonSearch.Text = "查询(&Q)";
+            this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // comboBoxState
             // 
@@ -298,9 +299,9 @@
             this.checkBoxAll.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxAll.Location = new System.Drawing.Point(11, 11);
             this.checkBoxAll.Name = "checkBoxAll";
-            this.checkBoxAll.Size = new System.Drawing.Size(48, 16);
+            this.checkBoxAll.Size = new System.Drawing.Size(66, 16);
             this.checkBoxAll.TabIndex = 2;
-            this.checkBoxAll.Text = "全选";
+            this.checkBoxAll.Text = "全选(&A)";
             this.checkBoxAll.UseVisualStyleBackColor = true;
             // 
             // MainForm
@@ -339,10 +340,10 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.ComboBox comboBoxState;
         private System.Windows.Forms.TextBox textBoxKeyword;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonSearch;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButtonToday;
+        private System.Windows.Forms.RadioButton radioButtonAll;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonSend;
         private System.Windows.Forms.Button buttonAdd;

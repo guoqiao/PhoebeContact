@@ -54,170 +54,178 @@
             this.label11 = new System.Windows.Forms.Label();
             this.buttonOk = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
+            this.textBoxSkype = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.numericUpDownBrowse = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownInquiry = new System.Windows.Forms.NumericUpDown();
+            this.label14 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBrowse)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownInquiry)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 22);
+            this.label1.Location = new System.Drawing.Point(29, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 12);
             this.label1.TabIndex = 0;
-            this.label1.Text = "名称";
+            this.label1.Text = "公司";
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(77, 18);
+            this.textBoxName.Location = new System.Drawing.Point(61, 18);
             this.textBoxName.MaxLength = 63;
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(374, 21);
+            this.textBoxName.Size = new System.Drawing.Size(285, 21);
             this.textBoxName.TabIndex = 1;
             // 
             // textBoxSite
             // 
-            this.textBoxSite.Location = new System.Drawing.Point(77, 47);
+            this.textBoxSite.Location = new System.Drawing.Point(61, 47);
             this.textBoxSite.MaxLength = 63;
             this.textBoxSite.Name = "textBoxSite";
             this.textBoxSite.Size = new System.Drawing.Size(374, 21);
-            this.textBoxSite.TabIndex = 3;
+            this.textBoxSite.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 51);
+            this.label2.Location = new System.Drawing.Point(29, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 12);
-            this.label2.TabIndex = 2;
+            this.label2.TabIndex = 4;
             this.label2.Text = "网站";
             // 
             // textBoxAddr
             // 
-            this.textBoxAddr.Location = new System.Drawing.Point(77, 76);
-            this.textBoxAddr.MaxLength = 63;
+            this.textBoxAddr.Location = new System.Drawing.Point(61, 74);
+            this.textBoxAddr.MaxLength = 127;
             this.textBoxAddr.Name = "textBoxAddr";
             this.textBoxAddr.Size = new System.Drawing.Size(374, 21);
-            this.textBoxAddr.TabIndex = 5;
+            this.textBoxAddr.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 80);
+            this.label3.Location = new System.Drawing.Point(29, 78);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(29, 12);
-            this.label3.TabIndex = 4;
+            this.label3.TabIndex = 6;
             this.label3.Text = "地址";
             // 
             // textBoxCountry
             // 
-            this.textBoxCountry.Location = new System.Drawing.Point(77, 105);
-            this.textBoxCountry.MaxLength = 63;
+            this.textBoxCountry.Location = new System.Drawing.Point(387, 18);
+            this.textBoxCountry.MaxLength = 6;
             this.textBoxCountry.Name = "textBoxCountry";
-            this.textBoxCountry.Size = new System.Drawing.Size(374, 21);
-            this.textBoxCountry.TabIndex = 7;
+            this.textBoxCountry.Size = new System.Drawing.Size(48, 21);
+            this.textBoxCountry.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 109);
+            this.label4.Location = new System.Drawing.Point(353, 22);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 12);
-            this.label4.TabIndex = 6;
+            this.label4.TabIndex = 2;
             this.label4.Text = "国家";
             // 
             // textBoxPhone
             // 
-            this.textBoxPhone.Location = new System.Drawing.Point(77, 134);
+            this.textBoxPhone.Location = new System.Drawing.Point(280, 162);
             this.textBoxPhone.MaxLength = 63;
             this.textBoxPhone.Name = "textBoxPhone";
-            this.textBoxPhone.Size = new System.Drawing.Size(374, 21);
-            this.textBoxPhone.TabIndex = 9;
+            this.textBoxPhone.Size = new System.Drawing.Size(155, 21);
+            this.textBoxPhone.TabIndex = 19;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 138);
+            this.label5.Location = new System.Drawing.Point(246, 166);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(29, 12);
-            this.label5.TabIndex = 8;
+            this.label5.TabIndex = 18;
             this.label5.Text = "电话";
             // 
             // textBoxContact
             // 
-            this.textBoxContact.Location = new System.Drawing.Point(77, 163);
+            this.textBoxContact.Location = new System.Drawing.Point(61, 101);
             this.textBoxContact.MaxLength = 63;
             this.textBoxContact.Name = "textBoxContact";
-            this.textBoxContact.Size = new System.Drawing.Size(374, 21);
-            this.textBoxContact.TabIndex = 11;
+            this.textBoxContact.Size = new System.Drawing.Size(157, 21);
+            this.textBoxContact.TabIndex = 9;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(20, 167);
+            this.label6.Location = new System.Drawing.Point(29, 106);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 12);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "联系人";
+            this.label6.Size = new System.Drawing.Size(29, 12);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "姓名";
             // 
             // textBoxMobile
             // 
-            this.textBoxMobile.Location = new System.Drawing.Point(77, 192);
+            this.textBoxMobile.Location = new System.Drawing.Point(61, 159);
             this.textBoxMobile.MaxLength = 63;
             this.textBoxMobile.Name = "textBoxMobile";
-            this.textBoxMobile.Size = new System.Drawing.Size(374, 21);
-            this.textBoxMobile.TabIndex = 13;
+            this.textBoxMobile.Size = new System.Drawing.Size(157, 21);
+            this.textBoxMobile.TabIndex = 17;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(20, 196);
+            this.label7.Location = new System.Drawing.Point(29, 163);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(29, 12);
-            this.label7.TabIndex = 12;
+            this.label7.TabIndex = 16;
             this.label7.Text = "手机";
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(77, 221);
+            this.textBoxEmail.Location = new System.Drawing.Point(61, 130);
             this.textBoxEmail.MaxLength = 63;
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(374, 21);
-            this.textBoxEmail.TabIndex = 15;
+            this.textBoxEmail.Size = new System.Drawing.Size(157, 21);
+            this.textBoxEmail.TabIndex = 13;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(20, 225);
+            this.label8.Location = new System.Drawing.Point(29, 134);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(29, 12);
-            this.label8.TabIndex = 14;
+            this.label8.TabIndex = 12;
             this.label8.Text = "邮箱";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(20, 254);
+            this.label9.Location = new System.Drawing.Point(29, 194);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 12);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "首次询盘";
+            this.label9.Size = new System.Drawing.Size(29, 12);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "首次";
             // 
             // comboBoxState
             // 
             this.comboBoxState.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxState.FormattingEnabled = true;
-            this.comboBoxState.Location = new System.Drawing.Point(77, 308);
+            this.comboBoxState.Location = new System.Drawing.Point(280, 133);
             this.comboBoxState.Name = "comboBoxState";
-            this.comboBoxState.Size = new System.Drawing.Size(200, 20);
-            this.comboBoxState.TabIndex = 21;
+            this.comboBoxState.Size = new System.Drawing.Size(155, 20);
+            this.comboBoxState.TabIndex = 15;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.richTextBoxNote);
-            this.groupBox1.Location = new System.Drawing.Point(22, 337);
+            this.groupBox1.Location = new System.Drawing.Point(29, 255);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(429, 252);
-            this.groupBox1.TabIndex = 22;
+            this.groupBox1.Size = new System.Drawing.Size(406, 304);
+            this.groupBox1.TabIndex = 28;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "备注";
             // 
@@ -227,61 +235,112 @@
             this.richTextBoxNote.Location = new System.Drawing.Point(3, 17);
             this.richTextBoxNote.MaxLength = 2047;
             this.richTextBoxNote.Name = "richTextBoxNote";
-            this.richTextBoxNote.Size = new System.Drawing.Size(423, 232);
+            this.richTextBoxNote.Size = new System.Drawing.Size(400, 284);
             this.richTextBoxNote.TabIndex = 0;
             this.richTextBoxNote.Text = "";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(20, 282);
+            this.label10.Location = new System.Drawing.Point(29, 222);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(53, 12);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "最近联系";
+            this.label10.Size = new System.Drawing.Size(29, 12);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "最近";
             // 
             // dateTimePickerCreateOn
             // 
-            this.dateTimePickerCreateOn.Location = new System.Drawing.Point(78, 250);
+            this.dateTimePickerCreateOn.Location = new System.Drawing.Point(62, 190);
             this.dateTimePickerCreateOn.Name = "dateTimePickerCreateOn";
             this.dateTimePickerCreateOn.Size = new System.Drawing.Size(200, 21);
-            this.dateTimePickerCreateOn.TabIndex = 17;
+            this.dateTimePickerCreateOn.TabIndex = 21;
             // 
             // dateTimePickerUpdateOn
             // 
-            this.dateTimePickerUpdateOn.Location = new System.Drawing.Point(78, 279);
+            this.dateTimePickerUpdateOn.Location = new System.Drawing.Point(62, 218);
             this.dateTimePickerUpdateOn.Name = "dateTimePickerUpdateOn";
             this.dateTimePickerUpdateOn.Size = new System.Drawing.Size(200, 21);
-            this.dateTimePickerUpdateOn.TabIndex = 19;
+            this.dateTimePickerUpdateOn.TabIndex = 23;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(20, 311);
+            this.label11.Location = new System.Drawing.Point(246, 137);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(53, 12);
-            this.label11.TabIndex = 20;
-            this.label11.Text = "当前状态";
+            this.label11.Size = new System.Drawing.Size(29, 12);
+            this.label11.TabIndex = 14;
+            this.label11.Text = "状态";
             // 
             // buttonOk
             // 
-            this.buttonOk.Location = new System.Drawing.Point(94, 607);
+            this.buttonOk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonOk.Location = new System.Drawing.Point(118, 577);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(75, 23);
-            this.buttonOk.TabIndex = 23;
+            this.buttonOk.TabIndex = 29;
             this.buttonOk.Text = "确定";
             this.buttonOk.UseVisualStyleBackColor = true;
             this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
             // 
             // buttonCancel
             // 
+            this.buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(258, 607);
+            this.buttonCancel.Location = new System.Drawing.Point(282, 577);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
-            this.buttonCancel.TabIndex = 24;
+            this.buttonCancel.TabIndex = 30;
             this.buttonCancel.Text = "取消";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            // 
+            // textBoxSkype
+            // 
+            this.textBoxSkype.Location = new System.Drawing.Point(280, 103);
+            this.textBoxSkype.MaxLength = 63;
+            this.textBoxSkype.Name = "textBoxSkype";
+            this.textBoxSkype.Size = new System.Drawing.Size(155, 21);
+            this.textBoxSkype.TabIndex = 11;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(240, 107);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(35, 12);
+            this.label12.TabIndex = 10;
+            this.label12.Text = "Skype";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(307, 195);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(29, 12);
+            this.label13.TabIndex = 24;
+            this.label13.Text = "浏览";
+            // 
+            // numericUpDownBrowse
+            // 
+            this.numericUpDownBrowse.Location = new System.Drawing.Point(339, 190);
+            this.numericUpDownBrowse.Name = "numericUpDownBrowse";
+            this.numericUpDownBrowse.Size = new System.Drawing.Size(92, 21);
+            this.numericUpDownBrowse.TabIndex = 25;
+            // 
+            // numericUpDownInquiry
+            // 
+            this.numericUpDownInquiry.Location = new System.Drawing.Point(339, 218);
+            this.numericUpDownInquiry.Name = "numericUpDownInquiry";
+            this.numericUpDownInquiry.Size = new System.Drawing.Size(92, 21);
+            this.numericUpDownInquiry.TabIndex = 27;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(307, 223);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(29, 12);
+            this.label14.TabIndex = 26;
+            this.label14.Text = "询盘";
             // 
             // CustomerForm
             // 
@@ -289,7 +348,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(474, 642);
+            this.ClientSize = new System.Drawing.Size(474, 612);
+            this.Controls.Add(this.numericUpDownInquiry);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.numericUpDownBrowse);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.textBoxSkype);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonOk);
             this.Controls.Add(this.dateTimePickerUpdateOn);
@@ -323,6 +388,8 @@
             this.Text = "客户信息";
             this.Load += new System.EventHandler(this.CustomerForm_Load);
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBrowse)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownInquiry)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -356,5 +423,11 @@
         private System.Windows.Forms.Button buttonOk;
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.RichTextBox richTextBoxNote;
+        private System.Windows.Forms.TextBox textBoxSkype;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.NumericUpDown numericUpDownBrowse;
+        private System.Windows.Forms.NumericUpDown numericUpDownInquiry;
+        private System.Windows.Forms.Label label14;
     }
 }
