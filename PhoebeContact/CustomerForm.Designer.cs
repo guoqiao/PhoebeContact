@@ -281,7 +281,7 @@
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(75, 23);
             this.buttonOk.TabIndex = 30;
-            this.buttonOk.Text = "确定";
+            this.buttonOk.Text = "确定(&O)";
             this.buttonOk.UseVisualStyleBackColor = true;
             this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
             // 
@@ -293,7 +293,7 @@
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 31;
-            this.buttonCancel.Text = "取消";
+            this.buttonCancel.Text = "取消(&C)";
             this.buttonCancel.UseVisualStyleBackColor = true;
             // 
             // textBoxSkype
@@ -354,7 +354,6 @@
             // 
             // CustomerForm
             // 
-            this.AcceptButton = this.buttonOk;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;

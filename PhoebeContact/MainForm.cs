@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using PetaPoco;
+using Antlr.StringTemplate;
+using System.IO;
 
 namespace PhoebeContact
 {
@@ -141,7 +143,10 @@ namespace PhoebeContact
             ListView lv = sender as ListView;
             if (lv.SelectedItems.Count > 0)
             {
-                richTextBoxInfo.Text = BuildCustomerInfo(lv.SelectedItems[0].Tag as Customer);
+                Customer c = lv.SelectedItems[0].Tag as Customer;
+                State s = m_states[c.state_id];
+                richTextBoxInfo.Text = BuildCustomerInfo(c);
+                richTextBoxEmail.Text = RenderEmail(c.contact, s.name);
             }
         }
 
@@ -151,6 +156,15 @@ namespace PhoebeContact
             {
                 item.Checked = checkBoxAll.Checked;
             }
+        }
+
+        private string RenderEmail(string contact_name, string state_name)
+        {
+            string path = string.Format("template/{0}.txt", state_name);
+            string content = File.ReadAllText(path);
+            StringTemplate tmpl = new StringTemplate(content);
+            tmpl.SetAttribute("NAME", contact_name);
+            return tmpl.ToString();
         }
     }
 }
