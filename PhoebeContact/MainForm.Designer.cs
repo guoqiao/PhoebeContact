@@ -37,6 +37,9 @@
             this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
+            this.contextMenuStripCustomer = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItemEditCustomer = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemDeleteCustomer = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.checkBoxAll = new System.Windows.Forms.CheckBox();
             this.buttonSend = new System.Windows.Forms.Button();
@@ -52,12 +55,10 @@
             this.richTextBoxInfo = new System.Windows.Forms.RichTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.richTextBoxEmail = new System.Windows.Forms.RichTextBox();
-            this.contextMenuStripCustomer = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItemEditCustomer = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemDeleteCustomer = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            this.contextMenuStripCustomer.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.splitContainer2.Panel1.SuspendLayout();
@@ -65,7 +66,6 @@
             this.splitContainer2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.contextMenuStripCustomer.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -139,6 +139,29 @@
             // 
             this.columnHeader6.Text = "最近";
             this.columnHeader6.Width = 120;
+            // 
+            // contextMenuStripCustomer
+            // 
+            this.contextMenuStripCustomer.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemEditCustomer,
+            this.toolStripMenuItemDeleteCustomer});
+            this.contextMenuStripCustomer.Name = "contextMenuStripCustomer";
+            this.contextMenuStripCustomer.Size = new System.Drawing.Size(101, 48);
+            this.contextMenuStripCustomer.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStripCustomer_Opening);
+            // 
+            // toolStripMenuItemEditCustomer
+            // 
+            this.toolStripMenuItemEditCustomer.Name = "toolStripMenuItemEditCustomer";
+            this.toolStripMenuItemEditCustomer.Size = new System.Drawing.Size(100, 22);
+            this.toolStripMenuItemEditCustomer.Text = "编辑";
+            this.toolStripMenuItemEditCustomer.Click += new System.EventHandler(this.toolStripMenuItemEditCustomer_Click);
+            // 
+            // toolStripMenuItemDeleteCustomer
+            // 
+            this.toolStripMenuItemDeleteCustomer.Name = "toolStripMenuItemDeleteCustomer";
+            this.toolStripMenuItemDeleteCustomer.Size = new System.Drawing.Size(100, 22);
+            this.toolStripMenuItemDeleteCustomer.Text = "删除";
+            this.toolStripMenuItemDeleteCustomer.Click += new System.EventHandler(this.toolStripMenuItemDeleteCustomer_Click);
             // 
             // panel1
             // 
@@ -271,7 +294,7 @@
             // 
             this.splitContainer2.Panel2.Controls.Add(this.groupBox2);
             this.splitContainer2.Size = new System.Drawing.Size(294, 560);
-            this.splitContainer2.SplitterDistance = 205;
+            this.splitContainer2.SplitterDistance = 183;
             this.splitContainer2.TabIndex = 2;
             // 
             // groupBox1
@@ -280,7 +303,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(294, 205);
+            this.groupBox1.Size = new System.Drawing.Size(294, 183);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "客户信息";
@@ -290,7 +313,8 @@
             this.richTextBoxInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxInfo.Location = new System.Drawing.Point(3, 17);
             this.richTextBoxInfo.Name = "richTextBoxInfo";
-            this.richTextBoxInfo.Size = new System.Drawing.Size(288, 185);
+            this.richTextBoxInfo.ReadOnly = true;
+            this.richTextBoxInfo.Size = new System.Drawing.Size(288, 163);
             this.richTextBoxInfo.TabIndex = 0;
             this.richTextBoxInfo.Text = "";
             // 
@@ -300,7 +324,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(294, 351);
+            this.groupBox2.Size = new System.Drawing.Size(294, 373);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "邮件预览";
@@ -310,31 +334,10 @@
             this.richTextBoxEmail.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxEmail.Location = new System.Drawing.Point(3, 17);
             this.richTextBoxEmail.Name = "richTextBoxEmail";
-            this.richTextBoxEmail.Size = new System.Drawing.Size(288, 331);
+            this.richTextBoxEmail.ReadOnly = true;
+            this.richTextBoxEmail.Size = new System.Drawing.Size(288, 353);
             this.richTextBoxEmail.TabIndex = 0;
             this.richTextBoxEmail.Text = "";
-            // 
-            // contextMenuStripCustomer
-            // 
-            this.contextMenuStripCustomer.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItemEditCustomer,
-            this.toolStripMenuItemDeleteCustomer});
-            this.contextMenuStripCustomer.Name = "contextMenuStripCustomer";
-            this.contextMenuStripCustomer.Size = new System.Drawing.Size(153, 70);
-            // 
-            // toolStripMenuItemEditCustomer
-            // 
-            this.toolStripMenuItemEditCustomer.Name = "toolStripMenuItemEditCustomer";
-            this.toolStripMenuItemEditCustomer.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItemEditCustomer.Text = "编辑";
-            this.toolStripMenuItemEditCustomer.Click += new System.EventHandler(this.toolStripMenuItemEditCustomer_Click);
-            // 
-            // toolStripMenuItemDeleteCustomer
-            // 
-            this.toolStripMenuItemDeleteCustomer.Name = "toolStripMenuItemDeleteCustomer";
-            this.toolStripMenuItemDeleteCustomer.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItemDeleteCustomer.Text = "删除";
-            this.toolStripMenuItemDeleteCustomer.Click += new System.EventHandler(this.toolStripMenuItemDeleteCustomer_Click);
             // 
             // MainForm
             // 
@@ -350,6 +353,7 @@
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.ResumeLayout(false);
+            this.contextMenuStripCustomer.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -359,7 +363,6 @@
             this.splitContainer2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            this.contextMenuStripCustomer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -242,5 +242,10 @@ namespace PhoebeContact
                 buttonSend.Enabled = true;
             }
         }
+
+        private void contextMenuStripCustomer_Opening(object sender, CancelEventArgs e)
+        {
+            e.Cancel = listViewCustomer.SelectedItems.Count == 0;
+        }
     }
 }

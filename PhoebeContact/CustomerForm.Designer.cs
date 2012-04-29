@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.textBoxCompany = new System.Windows.Forms.TextBox();
             this.textBoxSite = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxAddr = new System.Windows.Forms.TextBox();
@@ -38,7 +38,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxPhone = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBoxContact = new System.Windows.Forms.TextBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxMobile = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -76,13 +76,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "公司";
             // 
-            // textBoxName
+            // textBoxCompany
             // 
-            this.textBoxName.Location = new System.Drawing.Point(61, 18);
-            this.textBoxName.MaxLength = 63;
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(285, 21);
-            this.textBoxName.TabIndex = 1;
+            this.textBoxCompany.Location = new System.Drawing.Point(61, 18);
+            this.textBoxCompany.MaxLength = 63;
+            this.textBoxCompany.Name = "textBoxCompany";
+            this.textBoxCompany.Size = new System.Drawing.Size(285, 21);
+            this.textBoxCompany.TabIndex = 1;
             // 
             // textBoxSite
             // 
@@ -152,13 +152,13 @@
             this.label5.TabIndex = 19;
             this.label5.Text = "电话";
             // 
-            // textBoxContact
+            // textBoxName
             // 
-            this.textBoxContact.Location = new System.Drawing.Point(61, 101);
-            this.textBoxContact.MaxLength = 63;
-            this.textBoxContact.Name = "textBoxContact";
-            this.textBoxContact.Size = new System.Drawing.Size(157, 21);
-            this.textBoxContact.TabIndex = 9;
+            this.textBoxName.Location = new System.Drawing.Point(61, 101);
+            this.textBoxName.MaxLength = 63;
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(157, 21);
+            this.textBoxName.TabIndex = 9;
             // 
             // label6
             // 
@@ -378,7 +378,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBoxMobile);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBoxContact);
+            this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBoxPhone);
             this.Controls.Add(this.label5);
@@ -388,7 +388,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBoxSite);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBoxName);
+            this.Controls.Add(this.textBoxCompany);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -409,7 +409,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.TextBox textBoxCompany;
         private System.Windows.Forms.TextBox textBoxSite;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxAddr;
@@ -418,7 +418,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxPhone;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBoxContact;
+        private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBoxMobile;
         private System.Windows.Forms.Label label7;
