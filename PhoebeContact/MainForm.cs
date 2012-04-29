@@ -59,7 +59,7 @@ namespace PhoebeContact
             if (!string.IsNullOrEmpty(keyword))
             {
                 string[] fields = { "name", "country", "site", "addr", "phone", "mobile", "contact", "email", "skype", "note" };
-                string sep = string.Format(" LIKE '{0}' OR ", keyword);
+                string sep = string.Format(" LIKE '%{0}%' OR ", keyword);
                 string like = string.Join(sep, fields);
                 sb.AppendFormat(" AND ({0})", like);
             }
@@ -93,8 +93,8 @@ namespace PhoebeContact
             item.Text = obj.name;
             item.SubItems.Add(obj.country);
             item.SubItems.Add(m_states[obj.state_id].ToString());
-            item.SubItems.Add(obj.email);
             item.SubItems.Add(obj.contact);
+            item.SubItems.Add(obj.email);
             item.SubItems.Add(obj.update_on.ToShortDateString());
             item.Checked = checkBoxAll.Checked;
             item.Tag = obj;
