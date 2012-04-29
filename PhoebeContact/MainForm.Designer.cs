@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.listViewCustomer = new System.Windows.Forms.ListView();
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
@@ -51,6 +52,8 @@
             this.richTextBoxInfo = new System.Windows.Forms.RichTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.richTextBoxEmail = new System.Windows.Forms.RichTextBox();
+            this.contextMenuStripCustomer = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItemEditCustomer = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -61,6 +64,7 @@
             this.splitContainer2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.contextMenuStripCustomer.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -93,6 +97,7 @@
             this.columnHeader4,
             this.columnHeader5,
             this.columnHeader6});
+            this.listViewCustomer.ContextMenuStrip = this.contextMenuStripCustomer;
             this.listViewCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listViewCustomer.FullRowSelect = true;
             this.listViewCustomer.GridLines = true;
@@ -308,6 +313,20 @@
             this.richTextBoxEmail.TabIndex = 0;
             this.richTextBoxEmail.Text = "";
             // 
+            // contextMenuStripCustomer
+            // 
+            this.contextMenuStripCustomer.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemEditCustomer});
+            this.contextMenuStripCustomer.Name = "contextMenuStripCustomer";
+            this.contextMenuStripCustomer.Size = new System.Drawing.Size(153, 48);
+            // 
+            // toolStripMenuItemEditCustomer
+            // 
+            this.toolStripMenuItemEditCustomer.Name = "toolStripMenuItemEditCustomer";
+            this.toolStripMenuItemEditCustomer.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItemEditCustomer.Text = "编辑";
+            this.toolStripMenuItemEditCustomer.Click += new System.EventHandler(this.toolStripMenuItemEditCustomer_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -331,6 +350,7 @@
             this.splitContainer2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            this.contextMenuStripCustomer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -360,6 +380,8 @@
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.CheckBox checkBoxAll;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStripCustomer;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemEditCustomer;
     }
 }
 

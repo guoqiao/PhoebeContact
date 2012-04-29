@@ -51,6 +51,27 @@ namespace PhoebeContact
             }
         }
 
+        private void toolStripMenuItemEditCustomer_Click(object sender, EventArgs e)
+        {
+            if (listViewCustomer.SelectedItems.Count <= 0)
+            {
+                return;
+            }
+
+            ListViewItem item = listViewCustomer.SelectedItems[0];
+
+            Customer c = item.Tag as Customer;
+
+            CustomerForm form = new CustomerForm();
+            form.SetCustomer(c);
+            DialogResult r = form.ShowDialog();
+            if (r == DialogResult.OK)
+            {
+                db.Update(c);
+                UpdateListViewItem(c, item);
+            }
+        }
+
         private void LoadData()
         {
             StringBuilder sb = new StringBuilder("SELECT * FROM Customer WHERE id>0");
@@ -89,7 +110,7 @@ namespace PhoebeContact
 
         private void UpdateListViewItem(Customer obj, ListViewItem item)
         {
-
+            item.SubItems.Clear();
             item.Text = obj.name;
             item.SubItems.Add(obj.country);
             item.SubItems.Add(m_states[obj.state_id].ToString());

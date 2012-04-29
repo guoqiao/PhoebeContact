@@ -36,11 +36,13 @@ namespace PhoebeContact
             foreach (var obj in objs)
             {
                 comboBoxState.Items.Add(obj);
-            }
-            comboBoxState.SelectedIndex = 0;
+            }       
 
             if (m_customer == null)
             {
+                comboBoxState.SelectedIndex = 0;
+                dateTimePickerCreateOn.Value = DateTime.Today;
+                dateTimePickerUpdateOn.Value = DateTime.Today;
                 return;//new
             }
 
