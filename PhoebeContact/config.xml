@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <mail smtp="smtp.gmail.com"  port="587" ssl="true"  account="foo@gmail.com" password="******"/>
+</root>
