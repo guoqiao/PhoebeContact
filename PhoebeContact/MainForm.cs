@@ -72,6 +72,31 @@ namespace PhoebeContact
             }
         }
 
+        private void toolStripMenuItemDeleteCustomer_Click(object sender, EventArgs e)
+        {
+            if (listViewCustomer.SelectedItems.Count <= 0)
+            {
+                return;
+            }
+
+            ListViewItem item = listViewCustomer.SelectedItems[0];
+
+            Customer c = item.Tag as Customer;
+
+            DialogResult r = Popup.Question(string.Format("确认删除客户 {0} ?", c.name));
+
+            if (r == DialogResult.No)
+            {
+                return;
+            }
+
+            int ret = db.Delete(c);
+            if (ret > 0)
+            {
+                item.Remove();
+            }
+        }
+
         private void LoadData()
         {
             StringBuilder sb = new StringBuilder("SELECT * FROM Customer WHERE id>0");

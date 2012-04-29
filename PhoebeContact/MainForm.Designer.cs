@@ -54,6 +54,7 @@
             this.richTextBoxEmail = new System.Windows.Forms.RichTextBox();
             this.contextMenuStripCustomer = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItemEditCustomer = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemDeleteCustomer = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -316,9 +317,10 @@
             // contextMenuStripCustomer
             // 
             this.contextMenuStripCustomer.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItemEditCustomer});
+            this.toolStripMenuItemEditCustomer,
+            this.toolStripMenuItemDeleteCustomer});
             this.contextMenuStripCustomer.Name = "contextMenuStripCustomer";
-            this.contextMenuStripCustomer.Size = new System.Drawing.Size(153, 48);
+            this.contextMenuStripCustomer.Size = new System.Drawing.Size(153, 70);
             // 
             // toolStripMenuItemEditCustomer
             // 
@@ -326,6 +328,13 @@
             this.toolStripMenuItemEditCustomer.Size = new System.Drawing.Size(152, 22);
             this.toolStripMenuItemEditCustomer.Text = "编辑";
             this.toolStripMenuItemEditCustomer.Click += new System.EventHandler(this.toolStripMenuItemEditCustomer_Click);
+            // 
+            // toolStripMenuItemDeleteCustomer
+            // 
+            this.toolStripMenuItemDeleteCustomer.Name = "toolStripMenuItemDeleteCustomer";
+            this.toolStripMenuItemDeleteCustomer.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItemDeleteCustomer.Text = "删除";
+            this.toolStripMenuItemDeleteCustomer.Click += new System.EventHandler(this.toolStripMenuItemDeleteCustomer_Click);
             // 
             // MainForm
             // 
@@ -382,6 +391,7 @@
         private System.Windows.Forms.CheckBox checkBoxAll;
         private System.Windows.Forms.ContextMenuStrip contextMenuStripCustomer;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemEditCustomer;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemDeleteCustomer;
     }
 }
 
