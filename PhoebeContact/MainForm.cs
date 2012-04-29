@@ -235,7 +235,7 @@ namespace PhoebeContact
             }
             catch (System.Exception ex)
             {
-                Popup.Warn("发送邮件失败:" + ex.Message);
+                Popup.Warn("发送邮件失败:" + ex.InnerException.Message);
             }
             finally
             {
