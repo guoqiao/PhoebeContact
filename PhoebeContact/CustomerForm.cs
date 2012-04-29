@@ -119,9 +119,7 @@ namespace PhoebeContact
             m_customer.state_id = comboBoxState.SelectedIndex + 1;
             m_customer.count = (int)numericUpDownCount.Value;
 
-            m_customer.count = 0;
-
-            DbAccess.GetInstance().Save(m_customer);
+            m_customer.count = (int)numericUpDownCount.Value;
 
             DialogResult = DialogResult.OK;
         }

@@ -73,6 +73,7 @@
     </Compile>
     <Compile Include="DateComparer.cs" />
     <Compile Include="DbAccess.cs" />
+    <Compile Include="Email.cs" />
     <Compile Include="FloatComparer.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>

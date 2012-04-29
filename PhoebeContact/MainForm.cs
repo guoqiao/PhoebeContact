@@ -166,5 +166,34 @@ namespace PhoebeContact
             tmpl.SetAttribute("NAME", contact_name);
             return tmpl.ToString();
         }
+
+        private void buttonSend_Click(object sender, EventArgs e)
+        {
+            if (listViewCustomer.CheckedItems.Count <= 0)
+            {
+                return;
+            }
+
+            buttonSend.Enabled = false;
+            Email postman = new Email();
+            try
+            {
+                foreach (ListViewItem item in listViewCustomer.CheckedItems)
+                {
+                    Customer c = item.Tag as Customer;
+                    State s = m_states[c.state_id];
+                    string email = RenderEmail(c.contact, s.name);
+                    postman.SendMail(c.email, "Re: Induction Light from ZKLighting", email);
+                }
+            }
+            catch (System.Exception ex)
+            {
+            	
+            }
+            finally
+            {
+                buttonSend.Enabled = true;
+            }
+        }
     }
 }

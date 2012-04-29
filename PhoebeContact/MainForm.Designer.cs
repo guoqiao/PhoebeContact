@@ -167,6 +167,7 @@
             this.buttonSend.TabIndex = 1;
             this.buttonSend.Text = "发送(&S)";
             this.buttonSend.UseVisualStyleBackColor = true;
+            this.buttonSend.Click += new System.EventHandler(this.buttonSend_Click);
             // 
             // buttonAdd
             // 
