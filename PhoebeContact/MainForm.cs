@@ -146,7 +146,7 @@ namespace PhoebeContact
                 Customer c = lv.SelectedItems[0].Tag as Customer;
                 State s = m_states[c.state_id];
                 richTextBoxInfo.Text = BuildCustomerInfo(c);
-                richTextBoxEmail.Text = RenderEmail(c.contact, s.name);
+                richTextBoxEmail.Text = RenderEmail(c, s);
             }
         }
 
@@ -158,12 +158,13 @@ namespace PhoebeContact
             }
         }
 
-        private string RenderEmail(string contact_name, string state_name)
+        private string RenderEmail(Customer customer, State state)
         {
-            string path = string.Format("template/{0}.txt", state_name);
+            string path = string.Format("template/{0}.txt", state.name);
             string content = File.ReadAllText(path);
             StringTemplate tmpl = new StringTemplate(content);
-            tmpl.SetAttribute("NAME", contact_name);
+            tmpl.SetAttribute("NAME", customer.contact);
+            tmpl.SetAttribute("DATE", customer.update_on.ToShortDateString());
             return tmpl.ToString();
         }
 
@@ -182,13 +183,13 @@ namespace PhoebeContact
                 {
                     Customer c = item.Tag as Customer;
                     State s = m_states[c.state_id];
-                    string email = RenderEmail(c.contact, s.name);
+                    string email = RenderEmail(c, s);
                     postman.SendMail(c.email, "Re: Induction Light from ZKLighting", email);
                 }
             }
             catch (System.Exception ex)
             {
-            	
+                Popup.Warn("发送邮件失败:" + ex.Message);
             }
             finally
             {

@@ -265,7 +265,7 @@
             // 
             this.splitContainer2.Panel2.Controls.Add(this.groupBox2);
             this.splitContainer2.Size = new System.Drawing.Size(294, 560);
-            this.splitContainer2.SplitterDistance = 268;
+            this.splitContainer2.SplitterDistance = 205;
             this.splitContainer2.TabIndex = 2;
             // 
             // groupBox1
@@ -274,7 +274,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(294, 268);
+            this.groupBox1.Size = new System.Drawing.Size(294, 205);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "客户信息";
@@ -284,7 +284,7 @@
             this.richTextBoxInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxInfo.Location = new System.Drawing.Point(3, 17);
             this.richTextBoxInfo.Name = "richTextBoxInfo";
-            this.richTextBoxInfo.Size = new System.Drawing.Size(288, 248);
+            this.richTextBoxInfo.Size = new System.Drawing.Size(288, 185);
             this.richTextBoxInfo.TabIndex = 0;
             this.richTextBoxInfo.Text = "";
             // 
@@ -294,7 +294,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(294, 288);
+            this.groupBox2.Size = new System.Drawing.Size(294, 351);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "邮件预览";
@@ -304,7 +304,7 @@
             this.richTextBoxEmail.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxEmail.Location = new System.Drawing.Point(3, 17);
             this.richTextBoxEmail.Name = "richTextBoxEmail";
-            this.richTextBoxEmail.Size = new System.Drawing.Size(288, 268);
+            this.richTextBoxEmail.Size = new System.Drawing.Size(288, 331);
             this.richTextBoxEmail.TabIndex = 0;
             this.richTextBoxEmail.Text = "";
             // 
