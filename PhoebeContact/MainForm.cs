@@ -104,7 +104,7 @@ namespace PhoebeContact
             string keyword = textBoxKeyword.Text.Trim();
             if (!string.IsNullOrEmpty(keyword))
             {
-                string[] fields = { "name", "country", "site", "addr", "phone", "mobile", "contact", "email", "skype", "note" };
+                string[] fields = { "company", "country", "site", "addr", "phone", "mobile", "name", "email", "skype", "note" };
                 string sep = string.Format(" LIKE '%{0}%' OR ", keyword);
                 string like = string.Join(sep, fields);
                 sb.AppendFormat(" AND ({0})", like);
@@ -136,10 +136,10 @@ namespace PhoebeContact
         private void UpdateListViewItem(Customer obj, ListViewItem item)
         {
             item.SubItems.Clear();
-            item.Text = obj.name;
+            item.Text = obj.company;
             item.SubItems.Add(obj.country);
             item.SubItems.Add(m_states[obj.state_id].ToString());
-            item.SubItems.Add(obj.contact);
+            item.SubItems.Add(obj.name);
             item.SubItems.Add(obj.email);
             item.SubItems.Add(obj.update_on.ToShortDateString());
             item.Checked = checkBoxAll.Checked;
@@ -161,11 +161,11 @@ namespace PhoebeContact
         private string BuildCustomerInfo(Customer c)
         {
             StringBuilder builder = new StringBuilder();
-            builder.AppendLine(c.name);
+            builder.AppendLine(c.company);
             builder.AppendLine(c.country);
             builder.AppendLine(c.site);
             builder.AppendLine(c.addr);
-            builder.AppendLine(c.contact);
+            builder.AppendLine(c.name);
             builder.AppendLine(c.skype);
             builder.AppendLine(c.email);
             builder.AppendLine(c.mobile);
@@ -209,7 +209,7 @@ namespace PhoebeContact
             string path = string.Format("template/{0}.txt", state.name);
             string content = File.ReadAllText(path);
             StringTemplate tmpl = new StringTemplate(content);
-            tmpl.SetAttribute("NAME", customer.contact);
+            tmpl.SetAttribute("NAME", customer.name);
             tmpl.SetAttribute("DATE", customer.update_on.ToShortDateString());
             return tmpl.ToString();
         }

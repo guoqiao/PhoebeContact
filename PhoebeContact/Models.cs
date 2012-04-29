@@ -49,13 +49,13 @@ namespace PhoebeContact
     {
         public int id { get; set; }
 
-        public string name { get; set; }
+        public string company { get; set; }
         public string site { get; set; }
         public string addr { get; set; }
         public string country { get; set; }
         public string phone { get; set; }
 
-        public string contact { get; set; }
+        public string name { get; set; }
         public string mobile { get; set; }
         public string email { get; set; }
         public string skype { get; set; }

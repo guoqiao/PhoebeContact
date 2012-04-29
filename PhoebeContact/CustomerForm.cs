@@ -46,12 +46,12 @@ namespace PhoebeContact
                 return;//new
             }
 
-            textBoxName.Text = m_customer.name;
+            textBoxCompany.Text = m_customer.company;
             textBoxSite.Text = m_customer.site;
             textBoxAddr.Text = m_customer.addr;
             textBoxCountry.Text = m_customer.country;
             textBoxPhone.Text = m_customer.phone;
-            textBoxContact.Text = m_customer.contact;
+            textBoxName.Text = m_customer.name;
             textBoxMobile.Text = m_customer.mobile;
             textBoxEmail.Text = m_customer.email;
 
@@ -84,9 +84,9 @@ namespace PhoebeContact
             }
 
             //TODO: check input
-            m_customer.name = textBoxName.Text.Trim();
+            m_customer.company = textBoxCompany.Text.Trim();
 
-            if (!CheckInput(m_customer.name, "公司"))
+            if (!CheckInput(m_customer.company, "公司"))
             {
                 return;
             }
@@ -99,9 +99,9 @@ namespace PhoebeContact
             
             m_customer.phone = textBoxPhone.Text.Trim();
 
-            m_customer.contact = textBoxContact.Text.Trim();
+            m_customer.name = textBoxName.Text.Trim();
 
-            if (!CheckInput(m_customer.contact, "姓名"))
+            if (!CheckInput(m_customer.name, "姓名"))
             {
                 return;
             }
