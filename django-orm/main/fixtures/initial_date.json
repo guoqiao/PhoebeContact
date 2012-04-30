@@ -43,5 +43,3001 @@
             "name": "E", 
             "period": 0
         }
+    }, 
+    {
+        "pk": 1, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+1(809),+1(829)", 
+            "chinese": "\u591a\u7c73\u5c3c\u52a0\u5171\u548c\u56fd", 
+            "language": "\u897f\u73ed\u7259\u8bed|\u82f1\u8bed", 
+            "area": "", 
+            "hourdiff": -12.0, 
+            "google": "www.google.com.do", 
+            "abbr": "do", 
+            "english": "Dominican Republic"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+1(787),+1(939)", 
+            "chinese": "\u6ce2\u591a\u9ece\u5404", 
+            "language": "\u82f1\u8bed", 
+            "area": "N America", 
+            "hourdiff": -12.0, 
+            "google": "www.google.com.pr", 
+            "abbr": "pr", 
+            "english": "Puerto Rico"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+93", 
+            "chinese": "\u963f\u5bcc\u6c57", 
+            "language": "\u666e\u4ec0\u56fe\u8bed/\u8fbe\u91cc\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -3.5, 
+            "google": "www.google.com.af", 
+            "abbr": "af", 
+            "english": "Afghanistan"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "main.country", 
+        "fields": {
+            "code": "355", 
+            "chinese": "\u963f\u5c14\u5df4\u5c3c\u4e9a", 
+            "language": "\u963f\u5c14\u5df4\u5c3c\u4e9a\u8bed/\u5e0c\u814a", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "", 
+            "abbr": "al", 
+            "english": "Albania"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "main.country", 
+        "fields": {
+            "code": "213", 
+            "chinese": "\u963f\u5c14\u53ca\u5229\u4e9a", 
+            "language": "\u963f\u62c9\u4f2f\u8bed/\u67cf\u67cf\u5c14\u8bed/\u6cd5\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -7.0, 
+            "google": "www.google.dz", 
+            "abbr": "dz", 
+            "english": "Algeria"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+1(684)", 
+            "chinese": "\u7f8e\u5c5e\u8428\u6469\u4e9a\u7fa4\u5c9b", 
+            "language": "\u82f1\u8bed", 
+            "area": "Oceania", 
+            "hourdiff": -19.0, 
+            "google": "www.google.as", 
+            "abbr": "as", 
+            "english": "American Samoa"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+376", 
+            "chinese": "\u5b89\u9053\u5c14", 
+            "language": "\u52a0\u6cf0\u7f57\u5c3c\u4e9a\u8bed/\u6cd5\u8bed/", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "www.google.ad", 
+            "abbr": "ad", 
+            "english": "Andorra"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "main.country", 
+        "fields": {
+            "code": "244", 
+            "chinese": "\u5b89\u54e5\u62c9", 
+            "language": "\u8461\u8404\u7259\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -7.0, 
+            "google": "www.google.it.ao", 
+            "abbr": "ao", 
+            "english": "Angola"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+1(264)", 
+            "chinese": "\u5b89\u572d\u62c9\u5c9b", 
+            "language": "\u82f1\u8bed/\u897f\u73ed\u7259\u8bed", 
+            "area": "", 
+            "hourdiff": -12.0, 
+            "google": "www.google.com.ai", 
+            "abbr": "ai", 
+            "english": "Anguilla"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+672", 
+            "chinese": "\u5357\u6781\u6d32", 
+            "language": "\u82f1\u8bed", 
+            "area": "", 
+            "hourdiff": 0.0, 
+            "google": "", 
+            "abbr": "aq", 
+            "english": "Antarctica"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+1(268)", 
+            "chinese": "\u5b89\u63d0\u74dc\u548c\u5df4\u5e03\u8fbe", 
+            "language": "\u82f1\u8bed", 
+            "area": "N America", 
+            "hourdiff": -12.0, 
+            "google": "www.google.com.ag", 
+            "abbr": "ag", 
+            "english": "Antigua and Barbuda"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+54", 
+            "chinese": "\u963f\u6839\u5ef7", 
+            "language": "\u897f/\u82f1/\u610f/\u5fb7/\u6cd5\u8bed", 
+            "area": "S America", 
+            "hourdiff": -11.0, 
+            "google": "www.google.com.ar", 
+            "abbr": "ar", 
+            "english": "Argentina"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+374", 
+            "chinese": "\u4e9a\u7f8e\u5c3c\u4e9a", 
+            "language": "\u4e9a\u7f8e\u5c3c\u4e9a\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -4.0, 
+            "google": "www.google.am", 
+            "abbr": "am", 
+            "english": "Armenia"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+297", 
+            "chinese": "\u963f\u9c81\u5df4\u5c9b", 
+            "language": "\u897f\u73ed\u7259\u8bed/\u82f1\u8bed", 
+            "area": "", 
+            "hourdiff": -12.0, 
+            "google": "", 
+            "abbr": "aw", 
+            "english": "Aruba"
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+61", 
+            "chinese": "\u6fb3\u5927\u5229\u4e9a", 
+            "language": "\u82f1\u8bed", 
+            "area": "Oceania", 
+            "hourdiff": 2.0, 
+            "google": "www.google.com.au", 
+            "abbr": "au", 
+            "english": "Australia"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+43", 
+            "chinese": "\u5965\u5730\u5229", 
+            "language": "\u5fb7\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -12.0, 
+            "google": "www.google.at", 
+            "abbr": "at", 
+            "english": "Austria"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+994", 
+            "chinese": "\u963f\u585e\u62dc\u7586", 
+            "language": "\u963f\u585e\u62dc\u7586/\u4fc4/\u4e9a\u7f8e\u5c3c\u4e9a\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -4.0, 
+            "google": "www.google.az", 
+            "abbr": "az", 
+            "english": "Azerbaijan"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+1(242)", 
+            "chinese": "\u5df4\u54c8\u9a6c", 
+            "language": "\u82f1\u8bed", 
+            "area": "N America", 
+            "hourdiff": -13.0, 
+            "google": "", 
+            "abbr": "bs", 
+            "english": "Bahamas"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+973", 
+            "chinese": "\u5df4\u6797", 
+            "language": "\u963f\u62c9\u4f2f\u8bed/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -5.0, 
+            "google": "www.google.com.bh", 
+            "abbr": "bh", 
+            "english": "Bahrain"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+880", 
+            "chinese": "\u5b5f\u52a0\u62c9\u56fd", 
+            "language": "\u5b5f\u52a0\u62c9\u8bed/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -2.0, 
+            "google": "www.google.com.bd", 
+            "abbr": "bd", 
+            "english": "Bangladesh"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+1(246)", 
+            "chinese": "\u5df4\u5df4\u591a\u65af", 
+            "language": "\u82f1\u8bed", 
+            "area": "N America", 
+            "hourdiff": -12.0, 
+            "google": "", 
+            "abbr": "bb", 
+            "english": "Barbados"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "main.country", 
+        "fields": {
+            "code": "375", 
+            "chinese": "\u767d\u4fc4\u7f57\u65af", 
+            "language": "\u767d\u4fc4\u7f57\u65af\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -6.0, 
+            "google": "", 
+            "abbr": "by", 
+            "english": "Belarus"
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+32", 
+            "chinese": "\u6bd4\u5229\u65f6", 
+            "language": "\u5f17\u62c9\u8292\u8bed/\u6cd5\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "www.google.be", 
+            "abbr": "be", 
+            "english": "Belgium"
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+501", 
+            "chinese": "\u4f2f\u5229\u5179", 
+            "language": "\u82f1\u8bed/\u897f\u73ed\u7259\u8bed", 
+            "area": "N America", 
+            "hourdiff": -14.0, 
+            "google": "", 
+            "abbr": "bz", 
+            "english": "Belize"
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+229", 
+            "chinese": "\u8d1d\u5b81", 
+            "language": "\u6cd5\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -7.0, 
+            "google": "www.google.bj", 
+            "abbr": "bj", 
+            "english": "Benin"
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+1(441)", 
+            "chinese": "\u767e\u6155\u5927\u7fa4\u5c9b", 
+            "language": "\u82f1\u8bed", 
+            "area": "", 
+            "hourdiff": -12.0, 
+            "google": "", 
+            "abbr": "bm", 
+            "english": "Bermuda"
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+975", 
+            "chinese": "\u4e0d\u4e39", 
+            "language": "\u4e0d\u4e39\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -2.0, 
+            "google": "", 
+            "abbr": "bt", 
+            "english": "Bhutan"
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+591", 
+            "chinese": "\u73bb\u5229\u7ef4\u4e9a", 
+            "language": "\u897f\u73ed\u7259\u8bed", 
+            "area": "S America", 
+            "hourdiff": -12.0, 
+            "google": "www.google.com.bo", 
+            "abbr": "bo", 
+            "english": "Bolivia"
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+387", 
+            "chinese": "\u6ce2\u65af\u5c3c\u4e9a\u548c\u9ed1\u585e\u54e5\u7ef4\u90a3\u5171\u548c\u56fd", 
+            "language": "\u585e/\u514b\u7f57\u5730\u4e9a/\u6ce2\u65af\u5c3c\u4e9a\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -12.0, 
+            "google": "www.google.ba", 
+            "abbr": "ba", 
+            "english": "Bosnia and Hercegovina"
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+267", 
+            "chinese": "\u535a\u8328\u74e6\u90a3", 
+            "language": "\u82f1\u8bed", 
+            "area": "", 
+            "hourdiff": -6.0, 
+            "google": "www.google.co.bw", 
+            "abbr": "bw", 
+            "english": "Botswana"
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+55", 
+            "chinese": "\u5df4\u897f", 
+            "language": "\u8461\u8404\u7259\u8bed", 
+            "area": "S America", 
+            "hourdiff": -11.0, 
+            "google": "www.google.com.br", 
+            "abbr": "br", 
+            "english": "Brazil"
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+1(284)", 
+            "chinese": "\u82f1\u5c5e\u7ef4\u5c14\u4eac\u7fa4\u5c9b", 
+            "language": "\u82f1\u8bed", 
+            "area": "", 
+            "hourdiff": -12.0, 
+            "google": "", 
+            "abbr": "vg", 
+            "english": "British Virgin Island"
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+673", 
+            "chinese": "\u6587\u83b1", 
+            "language": "\u9a6c\u6765\u8bed/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": 0.0, 
+            "google": "www.google.com.bn", 
+            "abbr": "bn", 
+            "english": "Brunei"
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+359", 
+            "chinese": "\u4fdd\u52a0\u5229\u4e9a", 
+            "language": "\u4fdd\u52a0\u5229\u4e9a\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -6.0, 
+            "google": "www.google.bg", 
+            "abbr": "bg", 
+            "english": "Bulgaria"
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+226", 
+            "chinese": "\u5e03\u57fa\u7eb3\u6cd5\u7d22", 
+            "language": "\u6cd5\u8bed", 
+            "area": "", 
+            "hourdiff": -8.0, 
+            "google": "www.google.bf", 
+            "abbr": "bf", 
+            "english": "Burkina Faso"
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "main.country", 
+        "fields": {
+            "code": "257", 
+            "chinese": "\u5e03\u9686\u8fea", 
+            "language": "\u57fa\u9686\u8fea\u8bed/\u6cd5\u8bed", 
+            "area": "", 
+            "hourdiff": -6.0, 
+            "google": "www.google.bi", 
+            "abbr": "bi", 
+            "english": "Burundi"
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+855", 
+            "chinese": "\u67ec\u57d4\u5be8", 
+            "language": "\u6cd5\u8bed/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -1.0, 
+            "google": "www.google.com.co", 
+            "abbr": "co", 
+            "english": "Cambodia"
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+237", 
+            "chinese": "\u5580\u9ea6\u9686", 
+            "language": "\u82f1\u8bed/\u6cd5\u8bed", 
+            "area": "", 
+            "hourdiff": -7.0, 
+            "google": "www.google.cm", 
+            "abbr": "cm", 
+            "english": "Cameroon"
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+1", 
+            "chinese": "\u52a0\u62ff\u5927", 
+            "language": "\u82f1\u8bed/\u6cd5\u8bed", 
+            "area": "N America", 
+            "hourdiff": -13.0, 
+            "google": "http://www.google.ca/", 
+            "abbr": "ca", 
+            "english": "Canada"
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+238", 
+            "chinese": "\u4f5b\u5f97\u89d2", 
+            "language": "\u8461\u8404\u7259\u8bed/\u6cd5\u8bed/\u82f1\u8bed", 
+            "area": "", 
+            "hourdiff": -9.0, 
+            "google": "", 
+            "abbr": "cv", 
+            "english": "Cape Verde"
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+1(345)", 
+            "chinese": "\u5f00\u66fc\u7fa4\u5c9b", 
+            "language": "\u897f\u73ed\u7259\u8bed", 
+            "area": "", 
+            "hourdiff": -13.0, 
+            "google": "", 
+            "abbr": "ky", 
+            "english": "Cayman Islands"
+        }
+    }, 
+    {
+        "pk": 42, 
+        "model": "main.country", 
+        "fields": {
+            "code": "236", 
+            "chinese": "\u4e2d\u975e", 
+            "language": "\u6cd5\u8bed/\u6851\u6208\u8bed", 
+            "area": "", 
+            "hourdiff": -7.0, 
+            "google": "www.google.cf", 
+            "abbr": "cf", 
+            "english": "Central African Republic"
+        }
+    }, 
+    {
+        "pk": 43, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+235", 
+            "chinese": "\u4e4d\u5f97", 
+            "language": "\u6cd5\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -7.0, 
+            "google": "", 
+            "abbr": "td", 
+            "english": "Chad"
+        }
+    }, 
+    {
+        "pk": 44, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+56", 
+            "chinese": "\u667a\u5229", 
+            "language": "\u897f\u73ed\u7259\u8bed", 
+            "area": "S America", 
+            "hourdiff": -12.0, 
+            "google": "www.google.cl", 
+            "abbr": "cl", 
+            "english": "Chile"
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "main.country", 
+        "fields": {
+            "code": "86", 
+            "chinese": "\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd", 
+            "language": "\u4e2d\u6587", 
+            "area": "Asia", 
+            "hourdiff": 0.0, 
+            "google": "", 
+            "abbr": "cn", 
+            "english": "China"
+        }
+    }, 
+    {
+        "pk": 46, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+269", 
+            "chinese": "\u79d1\u6469\u7f57\u548c\u9a6c\u7ea6\u7279", 
+            "language": "\u6cd5\u8bed/\u963f\u62c9\u4f2f\u8bed", 
+            "area": "", 
+            "hourdiff": -12.0, 
+            "google": "", 
+            "abbr": "km", 
+            "english": "Comoros and Mayotte"
+        }
+    }, 
+    {
+        "pk": 47, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+242", 
+            "chinese": "\u521a\u679c", 
+            "language": "\u6cd5\u8bed", 
+            "area": "", 
+            "hourdiff": -12.0, 
+            "google": "www.google.cg", 
+            "abbr": "cg", 
+            "english": "Congo(Brazzaville)"
+        }
+    }, 
+    {
+        "pk": 48, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+243", 
+            "chinese": "\u521a\u679c(\u91d1)", 
+            "language": "\u6cd5\u8bed", 
+            "area": "", 
+            "hourdiff": -12.0, 
+            "google": "www.google.cd", 
+            "abbr": "cd", 
+            "english": "Congo(Kinshasa)"
+        }
+    }, 
+    {
+        "pk": 49, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+682", 
+            "chinese": "\u5e93\u514b\u7fa4\u5c9b", 
+            "language": "\u82f1\u8bed", 
+            "area": "Oceania", 
+            "hourdiff": -18.0, 
+            "google": "www.google.co.ck", 
+            "abbr": "ck", 
+            "english": "Cook Islands"
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+506", 
+            "chinese": "\u54e5\u65af\u8fbe\u9ece\u52a0", 
+            "language": "\u897f\u73ed\u7259\u8bed", 
+            "area": "N America", 
+            "hourdiff": -14.0, 
+            "google": "www.google.co.cr", 
+            "abbr": "cr", 
+            "english": "Costa Rica"
+        }
+    }, 
+    {
+        "pk": 51, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+225", 
+            "chinese": "\u79d1\u7279\u8fea\u74e6\u5171\u548c\u56fd", 
+            "language": "\u6cd5\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -8.0, 
+            "google": "", 
+            "abbr": "ci", 
+            "english": "Cote d'Ivoire"
+        }
+    }, 
+    {
+        "pk": 52, 
+        "model": "main.country", 
+        "fields": {
+            "code": "385", 
+            "chinese": "\u514b\u7f57\u5730\u4e9a", 
+            "language": "\u514b\u7f57\u5730\u4e9a\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "", 
+            "abbr": "hr", 
+            "english": "Croatia Rep"
+        }
+    }, 
+    {
+        "pk": 53, 
+        "model": "main.country", 
+        "fields": {
+            "code": "53", 
+            "chinese": "\u53e4\u5df4", 
+            "language": "\u897f\u73ed\u7259\u8bed", 
+            "area": "N America", 
+            "hourdiff": -13.0, 
+            "google": "www.google.com.cu", 
+            "abbr": "cu", 
+            "english": "Cuba"
+        }
+    }, 
+    {
+        "pk": 54, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+357", 
+            "chinese": "\u585e\u6d66\u8def\u65af", 
+            "language": "\u5e0c\u814a\u8bed/\u571f\u8033\u5176\u8bed/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -6.0, 
+            "google": "", 
+            "abbr": "cy", 
+            "english": "Cyprus"
+        }
+    }, 
+    {
+        "pk": 55, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+420", 
+            "chinese": "\u6377\u514b\u5171\u548c\u56fd", 
+            "language": "\u6377\u514b\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "www.google.cz", 
+            "abbr": "cz", 
+            "english": "Czech Republic"
+        }
+    }, 
+    {
+        "pk": 56, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+45", 
+            "chinese": "\u4e39\u9ea6", 
+            "language": "\u4e39\u9ea6\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "www.google.dk", 
+            "abbr": "dk", 
+            "english": "Denmark"
+        }
+    }, 
+    {
+        "pk": 57, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+253", 
+            "chinese": "\u5409\u5e03\u63d0", 
+            "language": "\u6cd5\u8bed/\u963f\u62c9\u4f2f\u8bed", 
+            "area": "", 
+            "hourdiff": -5.0, 
+            "google": "www.google.dj", 
+            "abbr": "dj", 
+            "english": "Djibouti"
+        }
+    }, 
+    {
+        "pk": 58, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+1(767)", 
+            "chinese": "\u591a\u7c73\u5c3c\u52a0", 
+            "language": "\u82f1\u8bed/\u6cd5\u8bed", 
+            "area": "N America", 
+            "hourdiff": -12.0, 
+            "google": "www.google.dm", 
+            "abbr": "dm", 
+            "english": "Dominica"
+        }
+    }, 
+    {
+        "pk": 59, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+670", 
+            "chinese": "\u4e1c\u5e1d\u6c76\u6c11\u4e3b\u5171\u548c\u56fd", 
+            "language": "\u5fb7\u987f\u8bed/\u8461\u8404\u7259\u8bed/\u5370\u5c3c\u8bed/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": 1.0, 
+            "google": "", 
+            "abbr": "tp", 
+            "english": "East Timor"
+        }
+    }, 
+    {
+        "pk": 60, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+593", 
+            "chinese": "\u5384\u74dc\u591a\u5c14", 
+            "language": "\u897f\u73ed\u7259\u8bed", 
+            "area": "S America", 
+            "hourdiff": -13.0, 
+            "google": "www.google.com.ec", 
+            "abbr": "ec", 
+            "english": "Ecuador"
+        }
+    }, 
+    {
+        "pk": 61, 
+        "model": "main.country", 
+        "fields": {
+            "code": "20", 
+            "chinese": "\u57c3\u53ca", 
+            "language": "\u963f\u62c9\u4f2f\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -6.0, 
+            "google": "www.google.com.eg", 
+            "abbr": "eg", 
+            "english": "Egypt"
+        }
+    }, 
+    {
+        "pk": 62, 
+        "model": "main.country", 
+        "fields": {
+            "code": "503", 
+            "chinese": "\u8428\u5c14\u74e6\u591a", 
+            "language": "\u897f\u73ed\u7259\u8bed", 
+            "area": "S America", 
+            "hourdiff": -14.0, 
+            "google": "", 
+            "abbr": "ev", 
+            "english": "El Salvador"
+        }
+    }, 
+    {
+        "pk": 63, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+240", 
+            "chinese": "\u8d64\u9053\u51e0\u5185\u4e9a", 
+            "language": "\u897f\u73ed\u7259\u8bed/\u6cd5\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -7.0, 
+            "google": "", 
+            "abbr": "cq", 
+            "english": "Equatorial Guinea"
+        }
+    }, 
+    {
+        "pk": 64, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+372", 
+            "chinese": "\u7231\u6c99\u5c3c\u4e9a", 
+            "language": "\u7231\u6c99\u5c3c\u4e9a/\u4fc4/\u82ac\u5170/\u82f1\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -6.0, 
+            "google": "www.google.ee", 
+            "abbr": "ee", 
+            "english": "Estonia"
+        }
+    }, 
+    {
+        "pk": 65, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+251", 
+            "chinese": "\u57c3\u585e\u4fc4\u6bd4\u4e9a", 
+            "language": "\u82f1\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -5.0, 
+            "google": "www.google.com.et", 
+            "abbr": "et", 
+            "english": "Ethiopia"
+        }
+    }, 
+    {
+        "pk": 66, 
+        "model": "main.country", 
+        "fields": {
+            "code": "500", 
+            "chinese": "\u798f\u514b\u5170\u7fa4\u5c9b", 
+            "language": "\u82f1\u8bed", 
+            "area": "", 
+            "hourdiff": -12.0, 
+            "google": "", 
+            "abbr": "fk", 
+            "english": "Falkland islands"
+        }
+    }, 
+    {
+        "pk": 67, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+298", 
+            "chinese": "\u6cd5\u7f57\u7fa4\u5c9b", 
+            "language": "\u6cd5\u7f57\u8bed", 
+            "area": "", 
+            "hourdiff": -8.0, 
+            "google": "", 
+            "abbr": "fo", 
+            "english": "Faroe Islands"
+        }
+    }, 
+    {
+        "pk": 68, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+679", 
+            "chinese": "\u6590\u6d4e", 
+            "language": "\u6590\u6d4e/\u82f1/\u5370\u5ea6\u65af\u5766\u8bed", 
+            "area": "Oceania", 
+            "hourdiff": 4.0, 
+            "google": "www.google.com.fj", 
+            "abbr": "fj", 
+            "english": "Fiji Islands"
+        }
+    }, 
+    {
+        "pk": 69, 
+        "model": "main.country", 
+        "fields": {
+            "code": "358", 
+            "chinese": "\u82ac\u5170", 
+            "language": "\u82ac\u5170\u8bed/\u745e\u5178\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -5.0, 
+            "google": "www.google.fi", 
+            "abbr": "fi", 
+            "english": "Finland"
+        }
+    }, 
+    {
+        "pk": 70, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+33", 
+            "chinese": "\u6cd5\u56fd", 
+            "language": "\u6cd5\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "www.google.fr", 
+            "abbr": "fr", 
+            "english": "France"
+        }
+    }, 
+    {
+        "pk": 71, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+594", 
+            "chinese": "\u6cd5\u5c5e\u572d\u4e9a\u90a3", 
+            "language": "\u82f1\u8bed", 
+            "area": "S America", 
+            "hourdiff": -11.0, 
+            "google": "", 
+            "abbr": "gf", 
+            "english": "French Guiana"
+        }
+    }, 
+    {
+        "pk": 72, 
+        "model": "main.country", 
+        "fields": {
+            "code": "241", 
+            "chinese": "\u52a0\u84ec", 
+            "language": "\u6cd5\u8bed", 
+            "area": "", 
+            "hourdiff": -7.0, 
+            "google": "www.google.ga", 
+            "abbr": "ga", 
+            "english": "Gabon"
+        }
+    }, 
+    {
+        "pk": 73, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+220", 
+            "chinese": "\u5188\u6bd4\u4e9a", 
+            "language": "\u82f1\u8bed", 
+            "area": "", 
+            "hourdiff": -8.0, 
+            "google": "www.google.gm", 
+            "abbr": "gm", 
+            "english": "Gambia"
+        }
+    }, 
+    {
+        "pk": 74, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+995", 
+            "chinese": "\u683c\u9c81\u5409\u4e9a", 
+            "language": "\u683c\u9c81\u5409\u4e9a\u8bed/\u4fc4\u8bed", 
+            "area": "", 
+            "hourdiff": -4.0, 
+            "google": "www.google.ge", 
+            "abbr": "ge", 
+            "english": "Georgia"
+        }
+    }, 
+    {
+        "pk": 75, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+49", 
+            "chinese": "\u5fb7\u56fd", 
+            "language": "\u5fb7\u8bed", 
+            "area": "", 
+            "hourdiff": -7.0, 
+            "google": "www.google.de", 
+            "abbr": "de", 
+            "english": "Germany"
+        }
+    }, 
+    {
+        "pk": 76, 
+        "model": "main.country", 
+        "fields": {
+            "code": "233", 
+            "chinese": "\u52a0\u7eb3", 
+            "language": "\u82f1\u8bed", 
+            "area": "", 
+            "hourdiff": -8.0, 
+            "google": "www.google.com.gh", 
+            "abbr": "gh", 
+            "english": "Ghana"
+        }
+    }, 
+    {
+        "pk": 77, 
+        "model": "main.country", 
+        "fields": {
+            "code": "350", 
+            "chinese": "\u76f4\u5e03\u7f57\u9640", 
+            "language": "\u82f1\u8bed", 
+            "area": "", 
+            "hourdiff": -7.0, 
+            "google": "www.google.com.gi", 
+            "abbr": "gi", 
+            "english": "Gibraltar"
+        }
+    }, 
+    {
+        "pk": 78, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+30", 
+            "chinese": "\u5e0c\u814a", 
+            "language": "\u5e0c\u814a\u8bed", 
+            "area": "", 
+            "hourdiff": -6.0, 
+            "google": "www.google.gr", 
+            "abbr": "gr", 
+            "english": "Greece"
+        }
+    }, 
+    {
+        "pk": 79, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+299", 
+            "chinese": "\u683c\u6797\u5170\u5c9b", 
+            "language": "\u683c\u6797\u5170\u8bed", 
+            "area": "", 
+            "hourdiff": -8.0, 
+            "google": "www.google.gl", 
+            "abbr": "gl", 
+            "english": "Greenland"
+        }
+    }, 
+    {
+        "pk": 80, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+1(473)", 
+            "chinese": "\u683c\u6797\u7eb3\u8fbe", 
+            "language": "\u82f1\u8bed", 
+            "area": "N America", 
+            "hourdiff": -12.0, 
+            "google": "", 
+            "abbr": "gd", 
+            "english": "Grenada"
+        }
+    }, 
+    {
+        "pk": 81, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+590", 
+            "chinese": "\u74dc\u5fb7\u7f57\u666e\u5c9b", 
+            "language": "\u82f1\u8bed", 
+            "area": "", 
+            "hourdiff": -12.0, 
+            "google": "www.google.gp", 
+            "abbr": "gp", 
+            "english": "Guadeloupe"
+        }
+    }, 
+    {
+        "pk": 82, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+1(671)", 
+            "chinese": "\u5173\u5c9b", 
+            "language": "\u82f1\u8bed/\u67e5\u83ab\u6d1b\u8bed", 
+            "area": "Oceania", 
+            "hourdiff": 2.0, 
+            "google": "", 
+            "abbr": "gu", 
+            "english": "Guam"
+        }
+    }, 
+    {
+        "pk": 83, 
+        "model": "main.country", 
+        "fields": {
+            "code": "502", 
+            "chinese": "\u5371\u5730\u9a6c\u62c9", 
+            "language": "\u897f\u73ed\u7259\u8bed/\u5370\u7b2c\u5b89\u8bed", 
+            "area": "", 
+            "hourdiff": -14.0, 
+            "google": "www.google.com.gt", 
+            "abbr": "gt", 
+            "english": "Guatemala"
+        }
+    }, 
+    {
+        "pk": 84, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+224", 
+            "chinese": "\u51e0\u5185\u4e9a", 
+            "language": "\u6cd5\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -8.0, 
+            "google": "", 
+            "abbr": "gn", 
+            "english": "Guinea"
+        }
+    }, 
+    {
+        "pk": 85, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+245", 
+            "chinese": "\u51e0\u5185\u4e9a(\u6bd4\u7ecd)", 
+            "language": "\u8461\u8404\u7259\u8bed", 
+            "area": "", 
+            "hourdiff": -8.0, 
+            "google": "", 
+            "abbr": "gw", 
+            "english": "Guinea-Bissau"
+        }
+    }, 
+    {
+        "pk": 86, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+592", 
+            "chinese": "\u572d\u4e9a\u90a3", 
+            "language": "\u82f1\u8bed", 
+            "area": "S America", 
+            "hourdiff": -12.0, 
+            "google": "www.google.gy", 
+            "abbr": "gy", 
+            "english": "Guyana"
+        }
+    }, 
+    {
+        "pk": 87, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+509", 
+            "chinese": "\u6d77\u5730", 
+            "language": "\u82f1\u8bed", 
+            "area": "N America", 
+            "hourdiff": -13.0, 
+            "google": "www.google.ht", 
+            "abbr": "ht", 
+            "english": "Haiti"
+        }
+    }, 
+    {
+        "pk": 88, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+504", 
+            "chinese": "\u6d2a\u90fd\u62c9\u65af", 
+            "language": "\u897f\u73ed\u7259\u8bed/\u82f1\u8bed", 
+            "area": "N America", 
+            "hourdiff": -14.0, 
+            "google": "", 
+            "abbr": "hn", 
+            "english": "Honduras"
+        }
+    }, 
+    {
+        "pk": 89, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+852", 
+            "chinese": "\u9999\u6e2f", 
+            "language": "\u4e2d/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": 0.0, 
+            "google": "www.google.com.hk", 
+            "abbr": "hk", 
+            "english": "Hong Kong"
+        }
+    }, 
+    {
+        "pk": 90, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+36", 
+            "chinese": "\u5308\u7259\u5229", 
+            "language": "\u5308\u7259\u5229\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "www.google.hu", 
+            "abbr": "hu", 
+            "english": "Hungary"
+        }
+    }, 
+    {
+        "pk": 91, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+354", 
+            "chinese": "\u51b0\u5c9b", 
+            "language": "\u51b0\u5c9b\u8bed/\u82f1\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -8.0, 
+            "google": "www.google.is", 
+            "abbr": "is", 
+            "english": "Iceland"
+        }
+    }, 
+    {
+        "pk": 92, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+91", 
+            "chinese": "\u5370\u5ea6", 
+            "language": "\u5370\u5730\u8bed/\u65c1\u906e\u666e\u8bed/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -2.5, 
+            "google": "www.google.co.in", 
+            "abbr": "in", 
+            "english": "India"
+        }
+    }, 
+    {
+        "pk": 93, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+62", 
+            "chinese": "\u5370\u5ea6\u5c3c\u897f\u4e9a", 
+            "language": "\u5370\u5c3c\u8bed/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -1.0, 
+            "google": "www.google.co.id", 
+            "abbr": "id", 
+            "english": "Indonesia"
+        }
+    }, 
+    {
+        "pk": 94, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+98", 
+            "chinese": "\u4f0a\u6717", 
+            "language": "\u6ce2\u65af\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -4.5, 
+            "google": "", 
+            "abbr": "ir", 
+            "english": "Iran"
+        }
+    }, 
+    {
+        "pk": 95, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+964", 
+            "chinese": "\u4f0a\u62c9\u514b", 
+            "language": "\u963f\u62c9\u4f2f\u8bed/\u5e93\u5c14\u5fb7\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -5.0, 
+            "google": "", 
+            "abbr": "iq", 
+            "english": "Iraq"
+        }
+    }, 
+    {
+        "pk": 96, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+353", 
+            "chinese": "\u7231\u5c14\u5170", 
+            "language": "\u7231\u5c14\u5170\u8bed/\u82f1\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -8.0, 
+            "google": "www.google.ie", 
+            "abbr": "ie", 
+            "english": "Ireland"
+        }
+    }, 
+    {
+        "pk": 97, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+972", 
+            "chinese": "\u4ee5\u8272\u5217", 
+            "language": "\u5e0c\u4f2f\u6765\u8bed/\u963f\u62c9\u4f2f\u8bed/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -6.0, 
+            "google": "www.google.co.il", 
+            "abbr": "il", 
+            "english": "Israel"
+        }
+    }, 
+    {
+        "pk": 98, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+39", 
+            "chinese": "\u610f\u5927\u5229", 
+            "language": "\u610f\u5927\u5229\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "www.google.it", 
+            "abbr": "it", 
+            "english": "Italy"
+        }
+    }, 
+    {
+        "pk": 99, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+1(876)", 
+            "chinese": "\u7259\u4e70\u52a0", 
+            "language": "\u82f1\u8bed/\u7259\u4e70\u52a0\u8bed", 
+            "area": "N America", 
+            "hourdiff": -13.0, 
+            "google": "www.google.com.jm", 
+            "abbr": "jm", 
+            "english": "Jamaica"
+        }
+    }, 
+    {
+        "pk": 100, 
+        "model": "main.country", 
+        "fields": {
+            "code": "81", 
+            "chinese": "\u65e5\u672c", 
+            "language": "\u65e5\u8bed", 
+            "area": "Asia", 
+            "hourdiff": 1.0, 
+            "google": "www.google.co.jp", 
+            "abbr": "jp", 
+            "english": "Japan"
+        }
+    }, 
+    {
+        "pk": 101, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+962", 
+            "chinese": "\u7ea6\u65e6", 
+            "language": "\u963f\u62c9\u4f2f\u8bed/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -6.0, 
+            "google": "www.google.jo", 
+            "abbr": "jo", 
+            "english": "Jordan"
+        }
+    }, 
+    {
+        "pk": 102, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+7", 
+            "chinese": "\u54c8\u8428\u514b\u65af\u5766", 
+            "language": "\u54c8\u8428\u514b\u8bed/\u4fc4\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -2.0, 
+            "google": "www.google.kz", 
+            "abbr": "kz", 
+            "english": "Kazakhstan"
+        }
+    }, 
+    {
+        "pk": 103, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+254", 
+            "chinese": "\u80af\u5c3c\u4e9a", 
+            "language": "\u82f1\u8bed/\u65af\u74e6\u5e0c\u91cc\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -5.0, 
+            "google": "www.google.co.ke", 
+            "abbr": "ke", 
+            "english": "Kenya"
+        }
+    }, 
+    {
+        "pk": 104, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+686", 
+            "chinese": "\u57fa\u91cc\u5df4\u65af", 
+            "language": "\u82f1\u8bed", 
+            "area": "Oceania", 
+            "hourdiff": 4.0, 
+            "google": "www.google.ki", 
+            "abbr": "ki", 
+            "english": "Kiribati"
+        }
+    }, 
+    {
+        "pk": 105, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+965", 
+            "chinese": "\u79d1\u5a01\u7279", 
+            "language": "\u963f\u62c9\u4f2f/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -5.0, 
+            "google": "www.google.com.kw", 
+            "abbr": "kw", 
+            "english": "Kuwait"
+        }
+    }, 
+    {
+        "pk": 106, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+996", 
+            "chinese": "\u5409\u5c14\u5409\u65af\u65af\u5766", 
+            "language": "\u4fc4\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -3.0, 
+            "google": "www.google.kg", 
+            "abbr": "kg", 
+            "english": "Kyrgyz Republic"
+        }
+    }, 
+    {
+        "pk": 107, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+856", 
+            "chinese": "\u8001\u631d", 
+            "language": "\u8001\u631d\u8bed/\u6cd5\u8bed/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -1.0, 
+            "google": "www.google.la", 
+            "abbr": "la", 
+            "english": "Laos"
+        }
+    }, 
+    {
+        "pk": 108, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+371", 
+            "chinese": "\u62c9\u8131\u7ef4\u4e9a", 
+            "language": "\u62c9\u8131\u7ef4\u4e9a\u8bed/\u4fc4\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -6.0, 
+            "google": "www.google.lv", 
+            "abbr": "lv", 
+            "english": "Latvia"
+        }
+    }, 
+    {
+        "pk": 109, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+961", 
+            "chinese": "\u9ece\u5df4\u5ae9", 
+            "language": "\u963f\u62c9\u4f2f\u8bed/\u6cd5/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -5.0, 
+            "google": "www.google.com.lb", 
+            "abbr": "lb", 
+            "english": "Lebanon"
+        }
+    }, 
+    {
+        "pk": 110, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+266", 
+            "chinese": "\u83b1\u7d22\u6258", 
+            "language": "\u82f1\u8bed/\u585e\u82cf\u9640\u8bed", 
+            "area": "", 
+            "hourdiff": -6.0, 
+            "google": "www.google.co.ls", 
+            "abbr": "ls", 
+            "english": "Lesotho"
+        }
+    }, 
+    {
+        "pk": 111, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+231", 
+            "chinese": "\u5229\u6bd4\u91cc\u4e9a", 
+            "language": "\u82f1\u8bed/\u963f\u62c9\u4f2f\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -8.0, 
+            "google": "", 
+            "abbr": "lr", 
+            "english": "Liberia"
+        }
+    }, 
+    {
+        "pk": 112, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+218", 
+            "chinese": "\u5229\u6bd4\u4e9a", 
+            "language": "\u963f/\u82f1\u8bed/\u610f\u5927\u5229\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -6.0, 
+            "google": "www.google.com.ly", 
+            "abbr": "ly", 
+            "english": "Libya"
+        }
+    }, 
+    {
+        "pk": 113, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+423", 
+            "chinese": "\u5217\u652f\u6566\u58eb\u767b", 
+            "language": "\u5fb7\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "www.google.li", 
+            "abbr": "li", 
+            "english": "Liechtenstein"
+        }
+    }, 
+    {
+        "pk": 114, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+370", 
+            "chinese": "\u7acb\u9676\u5b9b", 
+            "language": "\u7acb\u9676\u5b9b\u8bed/\u4fc4\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -6.0, 
+            "google": "", 
+            "abbr": "lt", 
+            "english": "Lithuania"
+        }
+    }, 
+    {
+        "pk": 115, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+352", 
+            "chinese": "\u5362\u68ee\u5821", 
+            "language": "\u5362\u68ee\u5821\u8bed/\u6cd5\u8bed/\u5fb7\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "www.google.lu", 
+            "abbr": "lu", 
+            "english": "Luxembourg"
+        }
+    }, 
+    {
+        "pk": 116, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+853", 
+            "chinese": "\u6fb3\u95e8", 
+            "language": "\u4e2d\u6587/\u8461\u8404\u7259\u8bed/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": 0.0, 
+            "google": "www.google.co.ma", 
+            "abbr": "ma", 
+            "english": "Macao"
+        }
+    }, 
+    {
+        "pk": 117, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+389", 
+            "chinese": "\u9a6c\u5176\u987f\u5171\u548c\u56fd", 
+            "language": "\u9a6c\u5176\u987f\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -12.0, 
+            "google": "", 
+            "abbr": "mk", 
+            "english": "Macedonia"
+        }
+    }, 
+    {
+        "pk": 118, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+261", 
+            "chinese": "\u9a6c\u8fbe\u52a0\u65af\u52a0", 
+            "language": "\u6cd5\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -5.0, 
+            "google": "www.google.mg", 
+            "abbr": "mg", 
+            "english": "Madagascar"
+        }
+    }, 
+    {
+        "pk": 119, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+265", 
+            "chinese": "\u9a6c\u62c9\u7ef4", 
+            "language": "\u82f1\u8bed/\u9f50\u5951\u74e6\u8bed", 
+            "area": "", 
+            "hourdiff": -6.0, 
+            "google": "www.google.mw", 
+            "abbr": "mw", 
+            "english": "Malawi"
+        }
+    }, 
+    {
+        "pk": 120, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+60", 
+            "chinese": "\u9a6c\u6765\u897f\u4e9a", 
+            "language": "\u9a6c\u6765\u8bed/\u4e2d/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": 0.0, 
+            "google": "www.google.com.my", 
+            "abbr": "my", 
+            "english": "Malaysia"
+        }
+    }, 
+    {
+        "pk": 121, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+960", 
+            "chinese": "\u9a6c\u5c14\u4ee3\u592b", 
+            "language": "\u8fea\u7ef4\u5e0c\u8bed/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -3.0, 
+            "google": "www.google.mv", 
+            "abbr": "mv", 
+            "english": "Maldives"
+        }
+    }, 
+    {
+        "pk": 122, 
+        "model": "main.country", 
+        "fields": {
+            "code": "223", 
+            "chinese": "\u9a6c\u91cc", 
+            "language": "\u6cd5\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -8.0, 
+            "google": "www.google.ml", 
+            "abbr": "ml", 
+            "english": "Mali"
+        }
+    }, 
+    {
+        "pk": 123, 
+        "model": "main.country", 
+        "fields": {
+            "code": "356", 
+            "chinese": "\u9a6c\u8033\u4ed6", 
+            "language": "\u9a6c\u8033\u4ed6\u8bed/\u82f1\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "www.google.com.mt", 
+            "abbr": "mt", 
+            "english": "Malta"
+        }
+    }, 
+    {
+        "pk": 124, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+692", 
+            "chinese": "\u9a6c\u7ecd\u5c14\u7fa4\u5c9b\u5171\u548c\u56fd", 
+            "language": "\u82f1\u8bed/\u9a6c\u7ecd\u5c14\u8bed", 
+            "area": "Oceania", 
+            "hourdiff": 4.0, 
+            "google": "", 
+            "abbr": "mh", 
+            "english": "Marshall Islands"
+        }
+    }, 
+    {
+        "pk": 125, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+596", 
+            "chinese": "\u9a6c\u63d0\u5c3c\u514b\u5c9b", 
+            "language": "\u6cd5\u8bed", 
+            "area": "S America", 
+            "hourdiff": -12.0, 
+            "google": "", 
+            "abbr": "mq", 
+            "english": "Martinique"
+        }
+    }, 
+    {
+        "pk": 126, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+222", 
+            "chinese": "\u6bdb\u91cc\u5854\u5c3c\u4e9a", 
+            "language": "\u963f\u62c9\u4f2f\u8bed/\u6cd5\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -8.0, 
+            "google": "", 
+            "abbr": "mr", 
+            "english": "Mauritania"
+        }
+    }, 
+    {
+        "pk": 127, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+230", 
+            "chinese": "\u6bdb\u91cc\u6c42\u65af", 
+            "language": "\u82f1\u8bed", 
+            "area": "", 
+            "hourdiff": -4.0, 
+            "google": "www.google.mu", 
+            "abbr": "mu", 
+            "english": "Mauritius"
+        }
+    }, 
+    {
+        "pk": 128, 
+        "model": "main.country", 
+        "fields": {
+            "code": "52", 
+            "chinese": "\u58a8\u897f\u54e5", 
+            "language": "\u897f\u73ed\u7259\u8bed/\u5370\u7b2c\u5b89\u8bed", 
+            "area": "N America", 
+            "hourdiff": -14.0, 
+            "google": "www.google.com.mx", 
+            "abbr": "mx", 
+            "english": "Mexico"
+        }
+    }, 
+    {
+        "pk": 129, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+691", 
+            "chinese": "\u5bc6\u514b\u7f57\u5c3c\u897f\u4e9a\u8054\u90a6", 
+            "language": "\u82f1\u8bed", 
+            "area": "Oceania", 
+            "hourdiff": 4.0, 
+            "google": "www.google.fm", 
+            "abbr": "fm", 
+            "english": "Micronesia"
+        }
+    }, 
+    {
+        "pk": 130, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+373", 
+            "chinese": "\u6469\u5c14\u591a\u74e6", 
+            "language": "\u6469\u5c14\u591a\u74e6\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -6.0, 
+            "google": "www.google.md", 
+            "abbr": "md", 
+            "english": "Moldova"
+        }
+    }, 
+    {
+        "pk": 131, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+377", 
+            "chinese": "\u6469\u7eb3\u54e5", 
+            "language": "\u6cd5/\u82f1/\u610f\u5927\u5229", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "", 
+            "abbr": "mc", 
+            "english": "Monaco"
+        }
+    }, 
+    {
+        "pk": 132, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+976", 
+            "chinese": "\u8499\u53e4", 
+            "language": "\u8499\u53e4\u8bed/\u4fc4\u8bed/\u4e2d", 
+            "area": "Asia", 
+            "hourdiff": 0.0, 
+            "google": "www.google.mn", 
+            "abbr": "mn", 
+            "english": "Mongolia"
+        }
+    }, 
+    {
+        "pk": 133, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+1(664)", 
+            "chinese": "\u8499\u7279\u585e\u62c9\u7279", 
+            "language": "\u82f1\u8bed/\u6cd5\u8bed", 
+            "area": "S America", 
+            "hourdiff": -12.0, 
+            "google": "", 
+            "abbr": "ms", 
+            "english": "Montserrat"
+        }
+    }, 
+    {
+        "pk": 134, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+258", 
+            "chinese": "\u83ab\u6851\u6bd4\u514b", 
+            "language": "\u8461\u8404\u7259\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -6.0, 
+            "google": "www.google.co.mz", 
+            "abbr": "mz", 
+            "english": "Mozambique"
+        }
+    }, 
+    {
+        "pk": 135, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+95", 
+            "chinese": "\u7f05\u7538", 
+            "language": "\u7f05\u7538\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -1.5, 
+            "google": "", 
+            "abbr": "mm", 
+            "english": "Myanmar"
+        }
+    }, 
+    {
+        "pk": 136, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+264", 
+            "chinese": "\u7eb3\u7c73\u6bd4\u4e9a", 
+            "language": "\u82f1\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -6.0, 
+            "google": "www.google.com.na", 
+            "abbr": "na", 
+            "english": "Namibia"
+        }
+    }, 
+    {
+        "pk": 137, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+674", 
+            "chinese": "\u7459\u9c81", 
+            "language": "\u82f1\u8bed/\u7459\u9c81\u8bed", 
+            "area": "Oceania", 
+            "hourdiff": 4.0, 
+            "google": "www.google.nr", 
+            "abbr": "nr", 
+            "english": "Nauru"
+        }
+    }, 
+    {
+        "pk": 138, 
+        "model": "main.country", 
+        "fields": {
+            "code": "977", 
+            "chinese": "\u5c3c\u6cca\u5c14", 
+            "language": "\u5c3c\u6cca\u5c14\u8bed/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -2.5, 
+            "google": "www.google.com.np", 
+            "abbr": "np", 
+            "english": "Nepal"
+        }
+    }, 
+    {
+        "pk": 139, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+31", 
+            "chinese": "\u8377\u5170", 
+            "language": "\u8377\u5170\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "www.google.nl", 
+            "abbr": "nl", 
+            "english": "Netherlands"
+        }
+    }, 
+    {
+        "pk": 140, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+687", 
+            "chinese": "\u65b0\u5580\u91cc\u591a\u5c3c\u4e9a", 
+            "language": "\u82f1\u8bed", 
+            "area": "Oceania", 
+            "hourdiff": 3.0, 
+            "google": "", 
+            "abbr": "nc", 
+            "english": "New Caledonia"
+        }
+    }, 
+    {
+        "pk": 141, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+64", 
+            "chinese": "\u65b0\u897f\u5170", 
+            "language": "\u82f1\u8bed", 
+            "area": "Oceania", 
+            "hourdiff": 4.0, 
+            "google": "www.google.co.nz", 
+            "abbr": "nz", 
+            "english": "New Zealand"
+        }
+    }, 
+    {
+        "pk": 142, 
+        "model": "main.country", 
+        "fields": {
+            "code": "505", 
+            "chinese": "\u5c3c\u52a0\u62c9\u74dc", 
+            "language": "\u897f\u73ed\u7259\u8bed", 
+            "area": "S America", 
+            "hourdiff": -14.0, 
+            "google": "www.google.com.ni", 
+            "abbr": "ni", 
+            "english": "Nicaragua"
+        }
+    }, 
+    {
+        "pk": 143, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+227", 
+            "chinese": "\u5c3c\u65e5\u5c14", 
+            "language": "\u6cd5\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -8.0, 
+            "google": "www.google.ne", 
+            "abbr": "ne", 
+            "english": "Niger"
+        }
+    }, 
+    {
+        "pk": 144, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+234", 
+            "chinese": "\u5c3c\u65e5\u5229\u4e9a", 
+            "language": "\u82f1\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -7.0, 
+            "google": "www.google.com.ng", 
+            "abbr": "ng", 
+            "english": "Nigeria"
+        }
+    }, 
+    {
+        "pk": 145, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+683", 
+            "chinese": "\u7ebd\u57c3\u5c9b", 
+            "language": "\u82f1\u8bed", 
+            "area": "Oceania", 
+            "hourdiff": -12.0, 
+            "google": "www.google.nu", 
+            "abbr": "nu", 
+            "english": "Niue Islands"
+        }
+    }, 
+    {
+        "pk": 146, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+672", 
+            "chinese": "\u8bfa\u798f\u514b\u5c9b", 
+            "language": "\u82f1\u8bed", 
+            "area": "Oceania", 
+            "hourdiff": -12.0, 
+            "google": "www.google.com.nf", 
+            "abbr": "nf", 
+            "english": "Norfolk Islands"
+        }
+    }, 
+    {
+        "pk": 147, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+850", 
+            "chinese": "\u671d\u9c9c", 
+            "language": "\u671d\u9c9c\u8bed", 
+            "area": "Asia", 
+            "hourdiff": 1.0, 
+            "google": "", 
+            "abbr": "kp", 
+            "english": "North Korea"
+        }
+    }, 
+    {
+        "pk": 148, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+1(670)", 
+            "chinese": "\u5317\u9a6c\u91cc\u4e9a\u7eb3\u7fa4\u5c9b", 
+            "language": "\u82f1\u8bed", 
+            "area": "", 
+            "hourdiff": 2.0, 
+            "google": "", 
+            "abbr": "mp", 
+            "english": "Northern Mariana"
+        }
+    }, 
+    {
+        "pk": 149, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+47", 
+            "chinese": "\u632a\u5a01", 
+            "language": "\u632a\u5a01\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "www.google.no", 
+            "abbr": "no", 
+            "english": "Norway"
+        }
+    }, 
+    {
+        "pk": 150, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+92", 
+            "chinese": "\u5df4\u57fa\u65af\u5766", 
+            "language": "\u82f1\u8bed/\u4e4c\u5c14\u90fd\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -3.0, 
+            "google": "www.google.com.pk", 
+            "abbr": "pk", 
+            "english": "Pakistan"
+        }
+    }, 
+    {
+        "pk": 151, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+680", 
+            "chinese": "\u8d1d\u52b3\u5171\u548c\u56fd", 
+            "language": "\u82f1\u8bed", 
+            "area": "Oceania", 
+            "hourdiff": 1.0, 
+            "google": "", 
+            "abbr": "pw", 
+            "english": "Palau"
+        }
+    }, 
+    {
+        "pk": 152, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+507", 
+            "chinese": "\u5df4\u62ff\u9a6c", 
+            "language": "\u897f\u73ed\u7259\u8bed/\u82f1\u8bed", 
+            "area": "S America", 
+            "hourdiff": -13.0, 
+            "google": "www.google.com.pa", 
+            "abbr": "pa", 
+            "english": "Panama"
+        }
+    }, 
+    {
+        "pk": 153, 
+        "model": "main.country", 
+        "fields": {
+            "code": "675", 
+            "chinese": "\u5df4\u5e03\u4e9a\u65b0\u51e0\u5185\u4e9a", 
+            "language": "\u82f1\u8bed", 
+            "area": "Oceania", 
+            "hourdiff": 2.0, 
+            "google": "", 
+            "abbr": "pg", 
+            "english": "Papua New Guinea"
+        }
+    }, 
+    {
+        "pk": 154, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+595", 
+            "chinese": "\u5df4\u62c9\u572d", 
+            "language": "\u897f\u73ed\u7259\u8bed/\u74dc\u62c9\u5c3c\u8bed", 
+            "area": "S America", 
+            "hourdiff": -12.0, 
+            "google": "www.google.com.py", 
+            "abbr": "py", 
+            "english": "Paraguay"
+        }
+    }, 
+    {
+        "pk": 155, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+51", 
+            "chinese": "\u79d8\u9c81", 
+            "language": "\u897f\u73ed\u7259\u8bed", 
+            "area": "S America", 
+            "hourdiff": -13.0, 
+            "google": "www.google.com.pe", 
+            "abbr": "pe", 
+            "english": "Peru"
+        }
+    }, 
+    {
+        "pk": 156, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+63", 
+            "chinese": "\u83f2\u5f8b\u5bbe", 
+            "language": "\u82f1\u8bed/\u83f2\u5f8b\u5bbe\u8bed", 
+            "area": "Asia", 
+            "hourdiff": 0.0, 
+            "google": "www.google.com.ph", 
+            "abbr": "ph", 
+            "english": "Philippines"
+        }
+    }, 
+    {
+        "pk": 157, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+48", 
+            "chinese": "\u6ce2\u5170", 
+            "language": "\u6ce2\u5170\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "www.google.pl", 
+            "abbr": "pl", 
+            "english": "Poland"
+        }
+    }, 
+    {
+        "pk": 158, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+351", 
+            "chinese": "\u8461\u8404\u7259", 
+            "language": "\u8461\u8404\u7259\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -8.0, 
+            "google": "www.google.pt", 
+            "abbr": "pt", 
+            "english": "Portugal"
+        }
+    }, 
+    {
+        "pk": 159, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+974", 
+            "chinese": "\u5361\u5854\u5c14", 
+            "language": "\u963f\u62c9\u4f2f\u8bed/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -5.0, 
+            "google": "www.google.com.qa", 
+            "abbr": "qa", 
+            "english": "Qatar"
+        }
+    }, 
+    {
+        "pk": 160, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+262", 
+            "chinese": "\u7559\u5c3c\u6c6a", 
+            "language": "\u82f1\u8bed", 
+            "area": "", 
+            "hourdiff": -4.0, 
+            "google": "", 
+            "abbr": "re", 
+            "english": "Reunion"
+        }
+    }, 
+    {
+        "pk": 161, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+40", 
+            "chinese": "\u7f57\u9a6c\u5c3c\u4e9a", 
+            "language": "\u7f57\u9a6c\u5c3c\u4e9a\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -6.0, 
+            "google": "www.google.ro", 
+            "abbr": "ro", 
+            "english": "Romania"
+        }
+    }, 
+    {
+        "pk": 162, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+7", 
+            "chinese": "\u4fc4\u7f57\u65af\u8054\u90a6", 
+            "language": "\u4fc4\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -5.0, 
+            "google": "www.google.ru", 
+            "abbr": "ru", 
+            "english": "Russia"
+        }
+    }, 
+    {
+        "pk": 163, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+250", 
+            "chinese": "\u5362\u65fa\u8fbe", 
+            "language": "\u5362\u65fa\u8fbe\u8bed/\u82f1\u8bed/\u6cd5\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -6.0, 
+            "google": "www.google.rw", 
+            "abbr": "rw", 
+            "english": "Rwanda"
+        }
+    }, 
+    {
+        "pk": 164, 
+        "model": "main.country", 
+        "fields": {
+            "code": "685", 
+            "chinese": "\u8428\u6469\u4e9a", 
+            "language": "\u82f1\u8bed", 
+            "area": "", 
+            "hourdiff": -19.0, 
+            "google": "", 
+            "abbr": "ws", 
+            "english": "Samoa"
+        }
+    }, 
+    {
+        "pk": 165, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+378", 
+            "chinese": "\u5723\u9a6c\u529b\u8bfa", 
+            "language": "\u610f\u5927\u5229\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "www.google.sm", 
+            "abbr": "sm", 
+            "english": "San Marino"
+        }
+    }, 
+    {
+        "pk": 166, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+239", 
+            "chinese": "\u5723\u591a\u7f8e\u548c\u666e\u6797\u897f\u6bd4", 
+            "language": "\u8461\u8404\u7259\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -8.0, 
+            "google": "www.google.st", 
+            "abbr": "st", 
+            "english": "Sao Tome and Principe"
+        }
+    }, 
+    {
+        "pk": 167, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+966", 
+            "chinese": "\u6c99\u7279\u963f\u62c9\u4f2f", 
+            "language": "\u963f\u62c9\u4f2f\u8bed/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -5.0, 
+            "google": "www.google.com.sa", 
+            "abbr": "sa", 
+            "english": "Saudi Arabia"
+        }
+    }, 
+    {
+        "pk": 168, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+221", 
+            "chinese": "\u585e\u5185\u52a0\u5c14", 
+            "language": "\u6cd5\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -8.0, 
+            "google": "www.google.sn", 
+            "abbr": "sn", 
+            "english": "Senegal"
+        }
+    }, 
+    {
+        "pk": 169, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+248", 
+            "chinese": "\u585e\u820c\u5c14", 
+            "language": "\u514b\u91cc\u5965\u5c14\u8bed/\u82f1\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -4.0, 
+            "google": "www.google.sc", 
+            "abbr": "sc", 
+            "english": "Seychelles"
+        }
+    }, 
+    {
+        "pk": 170, 
+        "model": "main.country", 
+        "fields": {
+            "code": "232", 
+            "chinese": "\u585e\u62c9\u5229\u6602", 
+            "language": "\u82f1\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -8.0, 
+            "google": "www.google.com.sl", 
+            "abbr": "sl", 
+            "english": "Sierra Leone"
+        }
+    }, 
+    {
+        "pk": 171, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+65", 
+            "chinese": "\u65b0\u52a0\u5761", 
+            "language": "\u82f1\u8bed/\u534e\u8bed/\u9a6c\u6765\u8bed/\u6cf0\u7c73\u5c14\u8bed", 
+            "area": "Asia", 
+            "hourdiff": 0.0, 
+            "google": "www.google.com.sg", 
+            "abbr": "sg", 
+            "english": "Singapore"
+        }
+    }, 
+    {
+        "pk": 172, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+421", 
+            "chinese": "\u65af\u6d1b\u4f10\u514b\u5171\u548c\u56fd", 
+            "language": "\u65af\u6d1b\u4f10\u514b/\u5308\u7259\u5229\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "www.google.sk", 
+            "abbr": "sk", 
+            "english": "Slovakia"
+        }
+    }, 
+    {
+        "pk": 173, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+386", 
+            "chinese": "\u65af\u6d1b\u6587\u5c3c\u4e9a", 
+            "language": "\u65af\u6d1b\u6587\u5c3c\u4e9a\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "www.google.si", 
+            "abbr": "si", 
+            "english": "Slovenia"
+        }
+    }, 
+    {
+        "pk": 174, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+677", 
+            "chinese": "\u6240\u7f57\u95e8\u7fa4\u5c9b", 
+            "language": "\u82f1\u8bed", 
+            "area": "Oceania", 
+            "hourdiff": 3.0, 
+            "google": "www.google.com.sb", 
+            "abbr": "sb", 
+            "english": "Solomon Islands"
+        }
+    }, 
+    {
+        "pk": 175, 
+        "model": "main.country", 
+        "fields": {
+            "code": "252", 
+            "chinese": "\u7d22\u9a6c\u91cc", 
+            "language": "\u7d22\u9a6c\u91cc\u8bed/\u82f1\u8bed/\u963f\u62c9\u4f2f\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -5.0, 
+            "google": "", 
+            "abbr": "so", 
+            "english": "Somalia"
+        }
+    }, 
+    {
+        "pk": 176, 
+        "model": "main.country", 
+        "fields": {
+            "code": "27", 
+            "chinese": "\u5357\u975e", 
+            "language": "\u82f1\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -6.0, 
+            "google": "www.google.co.za", 
+            "abbr": "za", 
+            "english": "South Africa"
+        }
+    }, 
+    {
+        "pk": 177, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+82", 
+            "chinese": "\u97e9\u56fd", 
+            "language": "\u97e9\u8bed", 
+            "area": "Asia", 
+            "hourdiff": 1.0, 
+            "google": "www.google.co.kr", 
+            "abbr": "kr", 
+            "english": "South Korea"
+        }
+    }, 
+    {
+        "pk": 178, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+34", 
+            "chinese": "\u897f\u73ed\u7259", 
+            "language": "\u897f\u73ed\u7259\u8bed/\u52a0\u6cf0\u7f57\u5c3c\u4e9a\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "www.google.es", 
+            "abbr": "es", 
+            "english": "Spain"
+        }
+    }, 
+    {
+        "pk": 179, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+94", 
+            "chinese": "\u65af\u91cc\u5170\u5361", 
+            "language": "\u82f1\u8bed/\u50e7\u4f3d\u7f57\u8bed/\u6cf0\u7c73\u5c14\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -2.5, 
+            "google": "www.google.lk", 
+            "abbr": "lk", 
+            "english": "Sri Lanka"
+        }
+    }, 
+    {
+        "pk": 180, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+1(758)", 
+            "chinese": "\u5723\u5362\u897f\u4e9a", 
+            "language": "\u82f1\u8bed", 
+            "area": "", 
+            "hourdiff": -12.0, 
+            "google": "", 
+            "abbr": "lc", 
+            "english": "St Lucia"
+        }
+    }, 
+    {
+        "pk": 181, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+249", 
+            "chinese": "\u82cf\u4e39", 
+            "language": "\u82f1\u8bed/\u963f\u62c9\u4f2f\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -6.0, 
+            "google": "", 
+            "abbr": "sd", 
+            "english": "Sudan"
+        }
+    }, 
+    {
+        "pk": 182, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+597", 
+            "chinese": "\u82cf\u91cc\u5357", 
+            "language": "\u8377\u5170/\u82cf\u91cc\u5357/\u82f1\u8bed", 
+            "area": "S America", 
+            "hourdiff": -11.0, 
+            "google": "", 
+            "abbr": "sr", 
+            "english": "Suriname"
+        }
+    }, 
+    {
+        "pk": 183, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+268", 
+            "chinese": "\u65af\u5a01\u58eb\u5170", 
+            "language": "\u82f1\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -6.0, 
+            "google": "", 
+            "abbr": "sz", 
+            "english": "Swaziland"
+        }
+    }, 
+    {
+        "pk": 184, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+46", 
+            "chinese": "\u745e\u5178", 
+            "language": "\u745e\u5178\u8bed/\u82f1\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "www.google.se", 
+            "abbr": "se", 
+            "english": "Sweden"
+        }
+    }, 
+    {
+        "pk": 185, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+41", 
+            "chinese": "\u745e\u58eb", 
+            "language": "\u5fb7/\u6cd5/\u610f\u5927\u5229\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "www.google.ch", 
+            "abbr": "ch", 
+            "english": "Switzerland"
+        }
+    }, 
+    {
+        "pk": 186, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+963", 
+            "chinese": "\u53d9\u5229\u4e9a", 
+            "language": "\u963f\u62c9\u4f2f\u8bed/\u6cd5\u8bed/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -6.0, 
+            "google": "", 
+            "abbr": "sy", 
+            "english": "Syria"
+        }
+    }, 
+    {
+        "pk": 187, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+886", 
+            "chinese": "\u53f0\u6e7e\u7701", 
+            "language": "\u6c49\u8bed", 
+            "area": "Asia", 
+            "hourdiff": 0.0, 
+            "google": "www.google.com.tw", 
+            "abbr": "tw", 
+            "english": "Taiwan"
+        }
+    }, 
+    {
+        "pk": 188, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+992", 
+            "chinese": "\u5854\u5409\u514b\u65af\u5766", 
+            "language": "\u4fc4\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -3.0, 
+            "google": "www.google.com.tj", 
+            "abbr": "tj", 
+            "english": "Tajikistan"
+        }
+    }, 
+    {
+        "pk": 189, 
+        "model": "main.country", 
+        "fields": {
+            "code": "255", 
+            "chinese": "\u5766\u6851\u5c3c\u4e9a", 
+            "language": "\u82f1\u8bed/\u65af\u74e6\u5e0c\u91cc\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -5.0, 
+            "google": "www.google.co.tz", 
+            "abbr": "tz", 
+            "english": "Tanzania"
+        }
+    }, 
+    {
+        "pk": 190, 
+        "model": "main.country", 
+        "fields": {
+            "code": "66", 
+            "chinese": "\u6cf0\u56fd", 
+            "language": "\u6cf0/\u4e2d/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -1.0, 
+            "google": "www.google.co.th", 
+            "abbr": "th", 
+            "english": "Thailand"
+        }
+    }, 
+    {
+        "pk": 191, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+228", 
+            "chinese": "\u591a\u54e5", 
+            "language": "\u6cd5\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -12.0, 
+            "google": "www.google.tg", 
+            "abbr": "tg", 
+            "english": "Togolese Republic"
+        }
+    }, 
+    {
+        "pk": 192, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+690", 
+            "chinese": "\u6258\u514b\u52b3\u7fa4\u5c9b", 
+            "language": "\u82f1\u8bed", 
+            "area": "", 
+            "hourdiff": -19.0, 
+            "google": "www.google.tk", 
+            "abbr": "tk", 
+            "english": "Tokelau"
+        }
+    }, 
+    {
+        "pk": 193, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+676", 
+            "chinese": "\u6c64\u52a0", 
+            "language": "\u82f1\u8bed", 
+            "area": "Oceania", 
+            "hourdiff": 5.0, 
+            "google": "www.google.to", 
+            "abbr": "to", 
+            "english": "Tonga"
+        }
+    }, 
+    {
+        "pk": 194, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+1(868)", 
+            "chinese": "\u7279\u7acb\u5c3c\u8fbe\u548c\u591a\u5df4\u54e5", 
+            "language": "\u82f1/\u6cd5/\u897f/\u5317\u5370\u5ea6\u8bed", 
+            "area": "N America", 
+            "hourdiff": -12.0, 
+            "google": "www.google.tt", 
+            "abbr": "tt", 
+            "english": "Trinidad and Tobago"
+        }
+    }, 
+    {
+        "pk": 195, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+216", 
+            "chinese": "\u7a81\u5c3c\u65af", 
+            "language": "\u963f\u62c9\u4f2f\u8bed/\u6cd5\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -7.0, 
+            "google": "", 
+            "abbr": "tn", 
+            "english": "Tunisia"
+        }
+    }, 
+    {
+        "pk": 196, 
+        "model": "main.country", 
+        "fields": {
+            "code": "90", 
+            "chinese": "\u571f\u8033\u5176", 
+            "language": "\u571f\u8033\u5176\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -6.0, 
+            "google": "www.google.com.tr", 
+            "abbr": "tr", 
+            "english": "Turkey"
+        }
+    }, 
+    {
+        "pk": 197, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+993", 
+            "chinese": "\u571f\u5e93\u66fc\u65af\u5766", 
+            "language": "\u571f\u5e93\u66fc\u8bed/\u4fc4\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -3.0, 
+            "google": "www.google.tm", 
+            "abbr": "tm", 
+            "english": "Turkmenistan"
+        }
+    }, 
+    {
+        "pk": 198, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+1(649)", 
+            "chinese": "\u7279\u514b\u65af\u548c\u51ef\u79d1\u65af\u7fa4\u5c9b", 
+            "language": "\u82f1\u8bed", 
+            "area": "N America", 
+            "hourdiff": 4.0, 
+            "google": "", 
+            "abbr": "tc", 
+            "english": "Turks and Caicos Islands"
+        }
+    }, 
+    {
+        "pk": 199, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+688", 
+            "chinese": "\u56fe\u74e6\u5362", 
+            "language": "\u82f1\u8bed/\u56fe\u74e6\u5362\u8bed", 
+            "area": "Oceania", 
+            "hourdiff": 4.0, 
+            "google": "", 
+            "abbr": "tv", 
+            "english": "Tuvalu"
+        }
+    }, 
+    {
+        "pk": 200, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+256", 
+            "chinese": "\u4e4c\u5e72\u8fbe", 
+            "language": "\u82f1\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -5.0, 
+            "google": "www.google.co.ug", 
+            "abbr": "ug", 
+            "english": "Uganda"
+        }
+    }, 
+    {
+        "pk": 201, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+380", 
+            "chinese": "\u4e4c\u514b\u5170", 
+            "language": "\u4e4c\u514b\u5170\u8bed/\u4fc4\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -5.0, 
+            "google": "www.google.com.ua", 
+            "abbr": "ua", 
+            "english": "Ukraine"
+        }
+    }, 
+    {
+        "pk": 202, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+971", 
+            "chinese": "\u963f\u62c9\u4f2f\u8054\u5408\u914b\u957f\u56fd", 
+            "language": "\u963f\u62c9\u4f2f\u8bed/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -4.0, 
+            "google": "www.google.ae", 
+            "abbr": "ae", 
+            "english": "United Arab Emirates"
+        }
+    }, 
+    {
+        "pk": 203, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+44", 
+            "chinese": "\u82f1\u56fd", 
+            "language": "\u82f1\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -8.0, 
+            "google": "www.google.co.uk", 
+            "abbr": "uk", 
+            "english": "United Kingdom"
+        }
+    }, 
+    {
+        "pk": 204, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+1", 
+            "chinese": "\u7f8e\u56fd", 
+            "language": "\u82f1\u8bed", 
+            "area": "N America", 
+            "hourdiff": -13.0, 
+            "google": "", 
+            "abbr": "us", 
+            "english": "United States"
+        }
+    }, 
+    {
+        "pk": 205, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+598", 
+            "chinese": "\u4e4c\u62c9\u572d", 
+            "language": "\u897f\u73ed\u7259\u8bed", 
+            "area": "S America", 
+            "hourdiff": -11.0, 
+            "google": "www.google.com.uy", 
+            "abbr": "uy", 
+            "english": "Uruguay"
+        }
+    }, 
+    {
+        "pk": 206, 
+        "model": "main.country", 
+        "fields": {
+            "code": "998", 
+            "chinese": "\u4e4c\u5179\u522b\u514b\u65af\u5766", 
+            "language": "\u4e4c\u5179\u522b\u514b\u8bed/\u4fc4\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -3.0, 
+            "google": "", 
+            "abbr": "uz", 
+            "english": "Uzbekistan"
+        }
+    }, 
+    {
+        "pk": 207, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+678", 
+            "chinese": "\u74e6\u52aa\u963f\u56fe", 
+            "language": "\u82f1\u8bed/\u6cd5\u8bed", 
+            "area": "Oceania", 
+            "hourdiff": 3.0, 
+            "google": "www.google.vu", 
+            "abbr": "vu", 
+            "english": "Vanuatu"
+        }
+    }, 
+    {
+        "pk": 208, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+379", 
+            "chinese": "\u68b5\u8482\u5188", 
+            "language": "\u610f\u5927\u5229\u8bed/\u62c9\u4e01\u8bed", 
+            "area": "Europe", 
+            "hourdiff": -7.0, 
+            "google": "", 
+            "abbr": "va", 
+            "english": "Vatican City"
+        }
+    }, 
+    {
+        "pk": 209, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+58", 
+            "chinese": "\u59d4\u5185\u745e\u62c9", 
+            "language": "\u897f\u73ed\u7259\u8bed", 
+            "area": "S America", 
+            "hourdiff": -12.0, 
+            "google": "www.google.co.ve", 
+            "abbr": "ve", 
+            "english": "Venezuela"
+        }
+    }, 
+    {
+        "pk": 210, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+84", 
+            "chinese": "\u8d8a\u5357", 
+            "language": "\u8d8a\u5357\u8bed/\u6cd5\u8bed/\u82f1\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -1.0, 
+            "google": "www.google.com.vn", 
+            "abbr": "vn", 
+            "english": "Vietnam"
+        }
+    }, 
+    {
+        "pk": 211, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+681", 
+            "chinese": "\u74e6\u5229\u65af\u548c\u5bcc\u56fe\u7eb3\u7fa4\u5c9b", 
+            "language": "\u6cd5\u8bed", 
+            "area": "", 
+            "hourdiff": 4.0, 
+            "google": "", 
+            "abbr": "wf", 
+            "english": "Wallis and Futuna Islands"
+        }
+    }, 
+    {
+        "pk": 212, 
+        "model": "main.country", 
+        "fields": {
+            "code": "967", 
+            "chinese": "\u4e5f\u95e8\u5171\u548c\u56fd", 
+            "language": "\u963f\u62c9\u4f2f\u8bed", 
+            "area": "Asia", 
+            "hourdiff": -5.0, 
+            "google": "", 
+            "abbr": "ye", 
+            "english": "Yemen"
+        }
+    }, 
+    {
+        "pk": 213, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+260", 
+            "chinese": "\u8d5e\u6bd4\u4e9a", 
+            "language": "\u82f1\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -6.0, 
+            "google": "www.google.co.zm", 
+            "abbr": "zm", 
+            "english": "Zambia"
+        }
+    }, 
+    {
+        "pk": 214, 
+        "model": "main.country", 
+        "fields": {
+            "code": "+263", 
+            "chinese": "\u6d25\u5df4\u5e03\u97e6", 
+            "language": "\u82f1\u8bed/\u7ecd\u7eb3\u8bed/\u6069\u5fb7\u8d1d\u83b1\u8bed", 
+            "area": "Africa", 
+            "hourdiff": -6.0, 
+            "google": "www.google.co.zw", 
+            "abbr": "zw", 
+            "english": "Zimbabwe"
+        }
     }
 ]
