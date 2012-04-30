@@ -219,7 +219,7 @@
             this.groupBox1.Controls.Add(this.richTextBoxNote);
             this.groupBox1.Location = new System.Drawing.Point(29, 255);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(406, 304);
+            this.groupBox1.Size = new System.Drawing.Size(406, 193);
             this.groupBox1.TabIndex = 29;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "备注";
@@ -230,7 +230,7 @@
             this.richTextBoxNote.Location = new System.Drawing.Point(3, 17);
             this.richTextBoxNote.MaxLength = 2047;
             this.richTextBoxNote.Name = "richTextBoxNote";
-            this.richTextBoxNote.Size = new System.Drawing.Size(400, 284);
+            this.richTextBoxNote.Size = new System.Drawing.Size(400, 173);
             this.richTextBoxNote.TabIndex = 0;
             this.richTextBoxNote.Text = "";
             // 
@@ -269,7 +269,7 @@
             // buttonOk
             // 
             this.buttonOk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonOk.Location = new System.Drawing.Point(118, 577);
+            this.buttonOk.Location = new System.Drawing.Point(118, 468);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(75, 23);
             this.buttonOk.TabIndex = 30;
@@ -281,7 +281,7 @@
             // 
             this.buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(282, 577);
+            this.buttonCancel.Location = new System.Drawing.Point(282, 468);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 31;
@@ -359,7 +359,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(474, 612);
+            this.ClientSize = new System.Drawing.Size(474, 503);
             this.Controls.Add(this.comboBoxCountry);
             this.Controls.Add(this.numericUpDownCount);
             this.Controls.Add(this.numericUpDownInquiry);

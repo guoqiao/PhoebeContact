@@ -193,7 +193,7 @@ namespace PhoebeContact
             DateTime from = DateTime.Today.AddHours((int)(9.0 + c.hourdiff));
             DateTime to = DateTime.Today.AddHours((int)(17.0 + c.hourdiff));
 
-            builder.AppendFormat("工作:{0}:{1:00}-{2}:{3:00}", from.Hour, from.Minute, to.Hour, to.Minute);
+            builder.AppendFormat("工作:{0}-{1}", from.ToString("HH:mm"), to.ToString("HH:mm"));
 
             return builder.ToString();
         }
