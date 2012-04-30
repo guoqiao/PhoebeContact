@@ -55,6 +55,7 @@
             this.richTextBoxInfo = new System.Windows.Forms.RichTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.richTextBoxEmail = new System.Windows.Forms.RichTextBox();
+            this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -97,7 +98,8 @@
             this.columnHeader3,
             this.columnHeader4,
             this.columnHeader5,
-            this.columnHeader6});
+            this.columnHeader6,
+            this.columnHeader7});
             this.listViewCustomer.ContextMenuStrip = this.contextMenuStripCustomer;
             this.listViewCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listViewCustomer.FullRowSelect = true;
@@ -339,6 +341,11 @@
             this.richTextBoxEmail.TabIndex = 0;
             this.richTextBoxEmail.Text = "";
             // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "下次";
+            this.columnHeader7.Width = 120;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -395,6 +402,7 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStripCustomer;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemEditCustomer;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemDeleteCustomer;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
     }
 }
 

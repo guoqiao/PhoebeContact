@@ -138,10 +138,14 @@ namespace PhoebeContact
             item.SubItems.Clear();
             item.Text = obj.company;
             item.SubItems.Add(obj.country);
-            item.SubItems.Add(m_states[obj.state_id].ToString());
+            State state = m_states[obj.state_id];
+            item.SubItems.Add(state.ToString());
             item.SubItems.Add(obj.name);
             item.SubItems.Add(obj.email);
             item.SubItems.Add(obj.update_on.ToShortDateString());
+
+            DateTime next = obj.update_on.AddDays(state.period);
+            item.SubItems.Add(next.ToShortDateString());
             item.Checked = checkBoxAll.Checked;
             item.Tag = obj;
         }
@@ -230,12 +234,32 @@ namespace PhoebeContact
                 foreach (ListViewItem item in listViewCustomer.CheckedItems)
                 {
                     buttonSend.Text = count.ToString() + "...";
+                    count -= 1;
                     buttonSend.Update();
                     Customer c = item.Tag as Customer;
                     State s = m_states[c.state_id];
                     string email = RenderEmail(c, s);
                     postman.SendMail(c.email, "Re: Induction Light from ZKLighting", email);
-                    count -= 1;
+                    c.count -= 1;
+
+                    if (c.count <= 0)
+                    {
+                        c.count = 0;
+                    }
+
+                    if (s.period > 0 && c.count == 0)
+                    {
+                        int new_state_id = c.state_id + 1;
+                        if (m_states.ContainsKey(new_state_id))
+                        {
+                            c.state_id = new_state_id;
+                            c.count = m_states[new_state_id].total;
+                        }
+                    }
+
+                    db.Save(c);
+
+                    UpdateListViewItem(c, item);
                 }
             }
             catch (System.Exception ex)
