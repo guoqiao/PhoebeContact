@@ -32,6 +32,14 @@ namespace PhoebeContact
         private void CustomerForm_Load(object sender, EventArgs e)
         {
             Database db = DbAccess.GetInstance();
+
+            var countries = db.Query<Country>("SELECT * FROM Country");
+            comboBoxCountry.Items.Add("");
+            foreach (var obj in countries)
+            {
+                comboBoxCountry.Items.Add(obj);
+            }   
+
             var objs = db.Query<State>("SELECT * FROM State");
             foreach (var obj in objs)
             {
@@ -49,7 +57,7 @@ namespace PhoebeContact
             textBoxCompany.Text = m_customer.company;
             textBoxSite.Text = m_customer.site;
             textBoxAddr.Text = m_customer.addr;
-            textBoxCountry.Text = m_customer.country;
+            comboBoxCountry.Text = m_customer.country;
             textBoxPhone.Text = m_customer.phone;
             textBoxName.Text = m_customer.name;
             textBoxMobile.Text = m_customer.mobile;
@@ -91,7 +99,7 @@ namespace PhoebeContact
                 return;
             }
 
-            m_customer.country = textBoxCountry.Text.Trim();
+            m_customer.country = comboBoxCountry.Text.Trim();
 
             m_customer.site = textBoxSite.Text.Trim();
 

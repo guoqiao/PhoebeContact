@@ -34,7 +34,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxAddr = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxCountry = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxPhone = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -61,6 +60,7 @@
             this.numericUpDownInquiry = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
             this.numericUpDownCount = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxCountry = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBrowse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownInquiry)).BeginInit();
@@ -81,7 +81,7 @@
             this.textBoxCompany.Location = new System.Drawing.Point(61, 18);
             this.textBoxCompany.MaxLength = 63;
             this.textBoxCompany.Name = "textBoxCompany";
-            this.textBoxCompany.Size = new System.Drawing.Size(285, 21);
+            this.textBoxCompany.Size = new System.Drawing.Size(257, 21);
             this.textBoxCompany.TabIndex = 1;
             // 
             // textBoxSite
@@ -118,18 +118,10 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "地址";
             // 
-            // textBoxCountry
-            // 
-            this.textBoxCountry.Location = new System.Drawing.Point(385, 18);
-            this.textBoxCountry.MaxLength = 6;
-            this.textBoxCountry.Name = "textBoxCountry";
-            this.textBoxCountry.Size = new System.Drawing.Size(48, 21);
-            this.textBoxCountry.TabIndex = 3;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(353, 22);
+            this.label4.Location = new System.Drawing.Point(322, 22);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 12);
             this.label4.TabIndex = 2;
@@ -352,12 +344,23 @@
             this.numericUpDownCount.Size = new System.Drawing.Size(56, 21);
             this.numericUpDownCount.TabIndex = 16;
             // 
+            // comboBoxCountry
+            // 
+            this.comboBoxCountry.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.comboBoxCountry.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBoxCountry.FormattingEnabled = true;
+            this.comboBoxCountry.Location = new System.Drawing.Point(355, 18);
+            this.comboBoxCountry.Name = "comboBoxCountry";
+            this.comboBoxCountry.Size = new System.Drawing.Size(78, 20);
+            this.comboBoxCountry.TabIndex = 3;
+            // 
             // CustomerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
             this.ClientSize = new System.Drawing.Size(474, 612);
+            this.Controls.Add(this.comboBoxCountry);
             this.Controls.Add(this.numericUpDownCount);
             this.Controls.Add(this.numericUpDownInquiry);
             this.Controls.Add(this.label14);
@@ -382,7 +385,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBoxPhone);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBoxCountry);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBoxAddr);
             this.Controls.Add(this.label3);
@@ -414,7 +416,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxAddr;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxCountry;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxPhone;
         private System.Windows.Forms.Label label5;
@@ -441,5 +442,6 @@
         private System.Windows.Forms.NumericUpDown numericUpDownInquiry;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.NumericUpDown numericUpDownCount;
+        private System.Windows.Forms.ComboBox comboBoxCountry;
     }
 }
