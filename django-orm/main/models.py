@@ -13,7 +13,7 @@ class Country(models.Model):
     language = models.CharField(default="",max_length=63)
     google = models.URLField(default="",max_length=63)
     
-    hourdiff = models.IntegerField(default=-12) 
+    hourdiff = models.FloatField(default=-12.0) 
     
     class Meta:
         db_table = 'Country'

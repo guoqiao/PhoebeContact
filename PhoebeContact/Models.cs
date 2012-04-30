@@ -19,7 +19,7 @@ namespace PhoebeContact
         public string language { get; set; }
         public string google { get; set; }
 
-        public int hourdiff { get; set; }
+        public float hourdiff { get; set; }
 
         public override string ToString()
         {
@@ -68,5 +68,10 @@ namespace PhoebeContact
         public int state_id { get; set; }
         public int count { get; set; }
         public string note { get; set; }
+
+        public override string ToString()
+        {
+            return company;
+        }
     }
 }
