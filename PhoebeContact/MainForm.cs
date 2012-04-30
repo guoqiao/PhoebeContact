@@ -243,6 +243,7 @@ namespace PhoebeContact
                     State s = m_states[c.state_id];
                     string email = RenderEmail(c, s);
                     postman.SendMail(c.email, "Re: Induction Light from ZKLighting", email);
+                    c.update_on = DateTime.Today;
                     c.count -= 1;
 
                     if (c.count <= 0)
