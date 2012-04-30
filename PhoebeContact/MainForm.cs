@@ -133,6 +133,13 @@ namespace PhoebeContact
             }
         }
 
+        private DateTime GetNext(Customer obj)
+        {
+            State state = m_states[obj.state_id];
+            DateTime next = obj.update_on.AddDays(state.period);
+            return next;
+        }
+
         private void UpdateListViewItem(Customer obj, ListViewItem item)
         {
             item.SubItems.Clear();
@@ -143,9 +150,7 @@ namespace PhoebeContact
             item.SubItems.Add(obj.name);
             item.SubItems.Add(obj.email);
             item.SubItems.Add(obj.update_on.ToShortDateString());
-
-            DateTime next = obj.update_on.AddDays(state.period);
-            item.SubItems.Add(next.ToShortDateString());
+            item.SubItems.Add(GetNext(obj).ToShortDateString());
             item.Checked = checkBoxAll.Checked;
             item.Tag = obj;
         }
@@ -165,26 +170,24 @@ namespace PhoebeContact
         private string BuildCustomerInfo(Customer c)
         {
             StringBuilder builder = new StringBuilder();
-            builder.AppendLine(c.company);
-            builder.AppendLine(c.country);
-            builder.AppendLine(c.site);
-            builder.AppendLine(c.addr);
-            builder.AppendLine(c.name);
-            builder.AppendLine(c.skype);
-            builder.AppendLine(c.email);
-            builder.AppendLine(c.mobile);
-            builder.AppendLine(c.phone);
-            builder.AppendLine(c.browse.ToString());
-            builder.AppendLine(c.inquiry.ToString());
+            builder.AppendLine("公司:" + c.company);
+            builder.AppendLine("国家:" + c.country);
+            builder.AppendLine("网站:" + c.site);
+            builder.AppendLine("地址:" + c.addr);
+            builder.AppendLine("姓名:" + c.name);
+            builder.AppendLine("Skype:" + c.skype);
+            builder.AppendLine("邮箱:" + c.email);
+            builder.AppendLine("手机:" + c.mobile);
+            builder.AppendLine("电话:" + c.phone);
+            builder.AppendLine("浏览:" + c.browse.ToString());
+            builder.AppendLine("询盘:" + c.inquiry.ToString());
 
-            builder.AppendLine(c.create_on.ToShortDateString());
-            builder.AppendLine(c.update_on.ToShortDateString());
-
-
-
-            builder.AppendLine(m_states[c.state_id].ToString());
-            builder.AppendLine(c.count.ToString());
-            builder.AppendLine(c.note);
+            builder.AppendLine("首次:" + c.create_on.ToShortDateString());
+            builder.AppendLine("最近:" + c.update_on.ToShortDateString());
+            builder.AppendLine("下次:" + GetNext(c).ToShortDateString());
+            builder.AppendLine("状态:" + m_states[c.state_id].ToString());
+            builder.AppendLine("剩余:" + c.count.ToString());
+            builder.AppendLine("备注:\n" + c.note);
             return builder.ToString();
         }
 
