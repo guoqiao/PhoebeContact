@@ -216,21 +216,26 @@ namespace PhoebeContact
 
         private void buttonSend_Click(object sender, EventArgs e)
         {
-            if (listViewCustomer.CheckedItems.Count <= 0)
+            int count = listViewCustomer.CheckedItems.Count;
+            if (count <= 0)
             {
                 return;
             }
 
+            string text = buttonSend.Text;
             buttonSend.Enabled = false;
             Email postman = new Email();
             try
             {
                 foreach (ListViewItem item in listViewCustomer.CheckedItems)
                 {
+                    buttonSend.Text = count.ToString() + "...";
+                    buttonSend.Update();
                     Customer c = item.Tag as Customer;
                     State s = m_states[c.state_id];
                     string email = RenderEmail(c, s);
                     postman.SendMail(c.email, "Re: Induction Light from ZKLighting", email);
+                    count -= 1;
                 }
             }
             catch (System.Exception ex)
@@ -240,6 +245,7 @@ namespace PhoebeContact
             finally
             {
                 buttonSend.Enabled = true;
+                buttonSend.Text = text;
             }
         }
 
