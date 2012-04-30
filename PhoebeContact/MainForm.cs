@@ -140,6 +140,17 @@ namespace PhoebeContact
             return next;
         }
 
+        private Country GetCountry(string country)
+        {
+            if (string.IsNullOrEmpty(country))
+            {
+                return null;
+            }
+
+            var c = db.SingleOrDefault<Country>("WHERE abbr=@0", country);
+            return c;
+        }
+
         private void UpdateListViewItem(Customer obj, ListViewItem item)
         {
             item.SubItems.Clear();
@@ -167,6 +178,26 @@ namespace PhoebeContact
             LoadData();
         }
 
+        private string BuildCountryInfo(Country c)
+        {
+            StringBuilder builder = new StringBuilder();
+            builder.AppendLine("英文:" + c.english);
+            builder.AppendLine("缩写:" + c.abbr);
+            builder.AppendLine("中文:" + c.chinese);
+            builder.AppendLine("区域:" + c.area);
+            builder.AppendLine("语言:" + c.language);       
+            builder.AppendLine("区号:" + c.code);
+            builder.AppendLine("Google:" + c.google);
+            builder.AppendLine("时差:" + c.hourdiff.ToString("F1"));
+
+            DateTime from = DateTime.Today.AddHours((int)(9.0 + c.hourdiff));
+            DateTime to = DateTime.Today.AddHours((int)(17.0 + c.hourdiff));
+
+            builder.AppendFormat("工作:{0}:{1:00}-{2}:{3:00}", from.Hour, from.Minute, to.Hour, to.Minute);
+
+            return builder.ToString();
+        }
+
         private string BuildCustomerInfo(Customer c)
         {
             StringBuilder builder = new StringBuilder();
@@ -187,7 +218,19 @@ namespace PhoebeContact
             builder.AppendLine("下次:" + GetNext(c).ToShortDateString());
             builder.AppendLine("状态:" + m_states[c.state_id].ToString());
             builder.AppendLine("剩余:" + c.count.ToString());
-            builder.AppendLine("备注:\n" + c.note);
+
+            if (!string.IsNullOrEmpty(c.country))
+            {
+                Country country = GetCountry(c.country);
+                if (country != null)
+                {
+                    builder.AppendLine("===========国家===========");
+                    builder.AppendLine(BuildCountryInfo(country));
+                }
+            }
+
+            builder.AppendLine("===========备注===========");
+            builder.AppendLine(c.note);
             return builder.ToString();
         }
 
