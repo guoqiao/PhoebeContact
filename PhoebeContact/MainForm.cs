@@ -161,7 +161,7 @@ namespace PhoebeContact
             return c;
         }
 
-        Color[] m_colors = new Color[]{Color.White, Color.Green, Color.Yellow, Color.Blue, Color.Red, Color.Gray};
+        Color[] m_colors = new Color[]{Color.White, Color.LightGreen, Color.LightYellow, Color.LightSkyBlue, Color.IndianRed, Color.LightPink};
 
         private void UpdateListViewItem(Customer obj, ListViewItem item)
         {
@@ -257,6 +257,7 @@ namespace PhoebeContact
                 State s = m_states[c.state_id];
                 richTextBoxInfo.Text = BuildCustomerInfo(c);
                 richTextBoxEmail.Text = RenderEmail(c, s);
+                richTextBoxInfo.BackColor = richTextBoxEmail.BackColor = m_colors[c.state_id];
             }
         }
 
