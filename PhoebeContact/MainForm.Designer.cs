@@ -37,6 +37,7 @@
             this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
             this.contextMenuStripCustomer = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItemEditCustomer = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemDeleteCustomer = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,7 +56,7 @@
             this.richTextBoxInfo = new System.Windows.Forms.RichTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.richTextBoxEmail = new System.Windows.Forms.RichTextBox();
-            this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader8 = new System.Windows.Forms.ColumnHeader();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -99,7 +100,8 @@
             this.columnHeader4,
             this.columnHeader5,
             this.columnHeader6,
-            this.columnHeader7});
+            this.columnHeader7,
+            this.columnHeader8});
             this.listViewCustomer.ContextMenuStrip = this.contextMenuStripCustomer;
             this.listViewCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listViewCustomer.FullRowSelect = true;
@@ -135,12 +137,17 @@
             // columnHeader5
             // 
             this.columnHeader5.Text = "邮箱";
-            this.columnHeader5.Width = 120;
+            this.columnHeader5.Width = 160;
             // 
             // columnHeader6
             // 
             this.columnHeader6.Text = "最近";
-            this.columnHeader6.Width = 120;
+            this.columnHeader6.Width = 80;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "下次";
+            this.columnHeader7.Width = 80;
             // 
             // contextMenuStripCustomer
             // 
@@ -341,10 +348,10 @@
             this.richTextBoxEmail.TabIndex = 0;
             this.richTextBoxEmail.Text = "";
             // 
-            // columnHeader7
+            // columnHeader8
             // 
-            this.columnHeader7.Text = "下次";
-            this.columnHeader7.Width = 120;
+            this.columnHeader8.Text = "首次";
+            this.columnHeader8.Width = 80;
             // 
             // MainForm
             // 
@@ -403,6 +410,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemEditCustomer;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemDeleteCustomer;
         private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
     }
 }
 
