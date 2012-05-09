@@ -317,6 +317,11 @@
             // numericUpDownBrowse
             // 
             this.numericUpDownBrowse.Location = new System.Drawing.Point(341, 190);
+            this.numericUpDownBrowse.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
             this.numericUpDownBrowse.Name = "numericUpDownBrowse";
             this.numericUpDownBrowse.Size = new System.Drawing.Size(92, 21);
             this.numericUpDownBrowse.TabIndex = 26;
@@ -324,6 +329,11 @@
             // numericUpDownInquiry
             // 
             this.numericUpDownInquiry.Location = new System.Drawing.Point(341, 218);
+            this.numericUpDownInquiry.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
             this.numericUpDownInquiry.Name = "numericUpDownInquiry";
             this.numericUpDownInquiry.Size = new System.Drawing.Size(92, 21);
             this.numericUpDownInquiry.TabIndex = 28;
