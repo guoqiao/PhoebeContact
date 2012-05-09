@@ -136,7 +136,9 @@ namespace PhoebeContact
 
         private void comboBoxState_SelectedIndexChanged(object sender, EventArgs e)
         {
-            numericUpDownCount.Value = (comboBoxState.SelectedItem as State).total;
+            var state = (comboBoxState.SelectedItem as State);
+            numericUpDownCount.Value = state.total;
+            dateTimePickerUpdateOn.Value = DateTime.Today;
         }
     }
 }
