@@ -325,5 +325,34 @@ namespace PhoebeContact
         {
             e.Cancel = listViewCustomer.SelectedItems.Count == 0;
         }
+
+        SortOrder m_order = SortOrder.Ascending;
+
+        private void listViewCustomer_ColumnClick(object sender, ColumnClickEventArgs e)
+        {
+            if (m_order == SortOrder.Ascending)
+            {
+                m_order = SortOrder.Descending;
+            }
+            else
+            {
+                m_order = SortOrder.Ascending;
+            }
+
+            ListView lv = sender as ListView;
+
+            switch (e.Column)
+            {
+                case 5:
+                case 6:
+                case 7:
+                    lv.ListViewItemSorter = new DateComparer(e.Column, m_order);
+                    break;
+                default:
+                    lv.ListViewItemSorter = new StringComparer(e.Column, m_order);
+                    break;
+
+            }
+        }
     }
 }
