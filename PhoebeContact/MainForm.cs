@@ -151,6 +151,8 @@ namespace PhoebeContact
             return c;
         }
 
+        Color[] m_colors = new Color[]{Color.White, Color.Green, Color.Yellow, Color.Blue, Color.Red, Color.Gray};
+
         private void UpdateListViewItem(Customer obj, ListViewItem item)
         {
             item.SubItems.Clear();
@@ -164,6 +166,7 @@ namespace PhoebeContact
             item.SubItems.Add(GetNext(obj).ToShortDateString());
             item.SubItems.Add(obj.create_on.ToShortDateString());
             item.Checked = checkBoxAll.Checked;
+            item.BackColor = m_colors[obj.state_id];
             item.Tag = obj;
         }
 
