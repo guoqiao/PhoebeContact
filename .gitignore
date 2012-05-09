@@ -1,5 +1,8 @@
 bin
 obj
+tmp
+release
+release.bat
 *.pyc
 *~
 *.db
