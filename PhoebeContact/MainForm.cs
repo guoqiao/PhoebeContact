@@ -51,7 +51,7 @@ namespace PhoebeContact
             }
         }
 
-        private void toolStripMenuItemEditCustomer_Click(object sender, EventArgs e)
+        void Edit()
         {
             if (listViewCustomer.SelectedItems.Count <= 0)
             {
@@ -70,6 +70,16 @@ namespace PhoebeContact
                 db.Update(c);
                 UpdateListViewItem(c, item);
             }
+        }
+
+        private void toolStripMenuItemEditCustomer_Click(object sender, EventArgs e)
+        {
+            Edit();
+        }
+
+        private void listViewCustomer_DoubleClick(object sender, EventArgs e)
+        {
+            Edit();
         }
 
         private void toolStripMenuItemDeleteCustomer_Click(object sender, EventArgs e)

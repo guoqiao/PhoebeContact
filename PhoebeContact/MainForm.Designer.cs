@@ -115,6 +115,7 @@
             this.listViewCustomer.UseCompatibleStateImageBehavior = false;
             this.listViewCustomer.View = System.Windows.Forms.View.Details;
             this.listViewCustomer.SelectedIndexChanged += new System.EventHandler(this.listViewCustomer_SelectedIndexChanged);
+            this.listViewCustomer.DoubleClick += new System.EventHandler(this.listViewCustomer_DoubleClick);
             this.listViewCustomer.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listViewCustomer_ColumnClick);
             // 
             // columnHeader1
