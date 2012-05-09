@@ -115,8 +115,14 @@ namespace PhoebeContact
             if (!string.IsNullOrEmpty(keyword))
             {
                 string[] fields = { "company", "country", "site", "addr", "phone", "mobile", "name", "email", "skype", "note" };
+                string[] likes = new string[fields.Length];
+                int i = 0;
+                foreach (string field in fields)
+                {
+                    likes[i++] = string.Format("{0} LIKE '%{1}%'", field, keyword);
+                }
                 string sep = string.Format(" LIKE '%{0}%' OR ", keyword);
-                string like = string.Join(sep, fields);
+                string like = string.Join(" OR ", likes);
                 sb.AppendFormat(" AND ({0})", like);
             }
 
