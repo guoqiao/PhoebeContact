@@ -121,7 +121,6 @@ namespace PhoebeContact
                 {
                     likes[i++] = string.Format("{0} LIKE '%{1}%'", field, keyword);
                 }
-                string sep = string.Format(" LIKE '%{0}%' OR ", keyword);
                 string like = string.Join(" OR ", likes);
                 sb.AppendFormat(" AND ({0})", like);
             }
