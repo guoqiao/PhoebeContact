@@ -60,9 +60,83 @@ def import_country():
         c.area = row[7]
         c.google = row[8]
         c.save()
+
+def parsetime(str):
+    dt = datetime.now()
+    if not str or not str.strip():
+        return dt
+    try:
+        dt = datetime.strptime(str, '%Y-%m-%d')
+    except:
+        dt = datetime.strptime(str, '%Y.%m.%d')
+    return dt
+
+def import_customer():        
+    path = os.path.join(HERE, "a.csv")
+    fp = open(path)
+    reader = csv.reader(fp, delimiter=',', quotechar='"')
+    x = 0
+    y = 0
+    for row in reader:
+        x+=1
+        print x
+        r = [cell.strip() for cell in row]
+        c = Customer()
+        i = 0
+        #公司,国家,网站,地址,姓名,Skype,邮箱,手机,电话,
+        c.company = r[i]
+        i+=1
+        c.country = r[i]
+        i+=1
+        c.site = r[i]
+        i+=1
+        c.addr = r[i]
+        i+=1
+        c.name = r[i]
+        i+=1
+        c.skype = r[i]
+        i+=1
+        c.email = r[i]
+        if not c.email:
+            print 'no email, skip'
+            continue
+        if Customer.objects.filter(email=c.email):
+            print '%s exists, skip' % c.email
+            y+=1
+            continue
+        i+=1
+        c.mobile = r[i]
+        i+=1
+        c.phone = r[i]
+        i+=1
+        #浏览,询盘,首次,最近,下次,状态,剩余,备注,,,,,,
+        c.browse = int(r[i].strip() or 0)
+        i+=1
+        c.inquiry = int(r[i].strip() or 0)
+        i+=1
+        c.create_on = parsetime(r[i])
+        i+=1
+        c.update_on = parsetime(r[i])
+        i+=1
+        next = r[i] # **
+        i+=1
+        state = r[i]
+        c.state = State.objects.get(pk=5)
+        i+=1
+        c.count = 0
+        i+=1
+        c.note = r[i]
+        i+=1
+        c.save()
+        # print c.name + ' saved'
+    print y
+        
         
 if __name__ == '__main__':
     # init_states()
-    import_country()
+    # import_country()
+    import_customer()
+    c = Customer.objects.all().count()
+    print c
 
     
