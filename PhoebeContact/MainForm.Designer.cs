@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.listViewCustomer = new System.Windows.Forms.ListView();
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
@@ -38,6 +39,7 @@
             this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader8 = new System.Windows.Forms.ColumnHeader();
             this.contextMenuStripCustomer = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItemEditCustomer = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemDeleteCustomer = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,7 +58,7 @@
             this.richTextBoxInfo = new System.Windows.Forms.RichTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.richTextBoxEmail = new System.Windows.Forms.RichTextBox();
-            this.columnHeader8 = new System.Windows.Forms.ColumnHeader();
+            this.labelInfo = new System.Windows.Forms.Label();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -151,6 +153,11 @@
             this.columnHeader7.Text = "下次";
             this.columnHeader7.Width = 80;
             // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "首次";
+            this.columnHeader8.Width = 80;
+            // 
             // contextMenuStripCustomer
             // 
             this.contextMenuStripCustomer.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -176,6 +183,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.labelInfo);
             this.panel1.Controls.Add(this.checkBoxAll);
             this.panel1.Controls.Add(this.buttonSend);
             this.panel1.Controls.Add(this.buttonAdd);
@@ -350,10 +358,13 @@
             this.richTextBoxEmail.TabIndex = 0;
             this.richTextBoxEmail.Text = "";
             // 
-            // columnHeader8
+            // labelInfo
             // 
-            this.columnHeader8.Text = "首次";
-            this.columnHeader8.Width = 80;
+            this.labelInfo.AutoSize = true;
+            this.labelInfo.Location = new System.Drawing.Point(102, 12);
+            this.labelInfo.Name = "labelInfo";
+            this.labelInfo.Size = new System.Drawing.Size(0, 12);
+            this.labelInfo.TabIndex = 3;
             // 
             // MainForm
             // 
@@ -361,6 +372,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 562);
             this.Controls.Add(this.splitContainer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PhoebeContact";
@@ -413,6 +425,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemDeleteCustomer;
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.Label labelInfo;
     }
 }
 

@@ -146,6 +146,9 @@ namespace PhoebeContact
                 }
                 listViewCustomer.Items.Add(CreateListViewItem(obj));
             }
+
+            int c = listViewCustomer.Items.Count;
+            labelInfo.Text = string.Format("共 {0} 个客户", c);
         }
 
         private DateTime GetNext(Customer obj)
