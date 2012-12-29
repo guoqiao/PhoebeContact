@@ -96,11 +96,11 @@ TEMPLATE_LOADERS = (
 )
 
 MIDDLEWARE_CLASSES = (
-    # 'django.middleware.common.CommonMiddleware',
-    # 'django.contrib.sessions.middleware.SessionMiddleware',
-    # 'django.middleware.csrf.CsrfViewMiddleware',
-    # 'django.contrib.auth.middleware.AuthenticationMiddleware',
-    # 'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
 )
 
 ROOT_URLCONF = 'urls'
@@ -112,17 +112,18 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
-    # 'django.contrib.auth',
-    # 'django.contrib.contenttypes',
-    # 'django.contrib.sessions',
-    # 'django.contrib.sites',
-    # 'django.contrib.messages',
-    # 'django.contrib.staticfiles',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.sites',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     # 'south',
+    'mailer',
     'main',
 )
 
@@ -148,3 +149,13 @@ LOGGING = {
         },
     }
 }
+
+# == EMAIL ==
+EMAIL_HOST='smtp.insigma.com.cn'
+EMAIL_PORT=587
+EMAIL_HOST_USER='spig@insigma.com.cn'
+EMAIL_HOST_PASSWORD='123456' # fill this in local.py
+DEFAULT_FROM_EMAIL='spig@insigma.com.cn'
+EMAIL_SUBJECT_PREFIX='[Django]'
+EMAIL_USE_TLS=False
+EMAIL_BACKEND = "mailer.backend.DbBackend"
