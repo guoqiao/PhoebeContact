@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using PetaPoco;
+using System.Text.RegularExpressions;
 
 namespace PhoebeContact
 {
@@ -38,13 +39,13 @@ namespace PhoebeContact
             foreach (var obj in countries)
             {
                 comboBoxCountry.Items.Add(obj);
-            }   
+            }
 
             var objs = db.Query<State>("SELECT * FROM State");
             foreach (var obj in objs)
             {
                 comboBoxState.Items.Add(obj);
-            }       
+            }
 
             if (m_customer == null)
             {
@@ -104,7 +105,7 @@ namespace PhoebeContact
             m_customer.site = textBoxSite.Text.Trim();
 
             m_customer.addr = textBoxAddr.Text.Trim();
-            
+
             m_customer.phone = textBoxPhone.Text.Trim();
 
             m_customer.name = textBoxName.Text.Trim();
@@ -118,6 +119,14 @@ namespace PhoebeContact
 
             m_customer.mobile = textBoxMobile.Text.Trim();
             m_customer.email = textBoxEmail.Text.Trim();
+
+            string re = @"^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$";
+            bool match = Regex.IsMatch(m_customer.email,re);
+            if (!match)
+            {
+                Popup.Warn(string.Format("邮箱地址无效!"));
+                return;
+            }
 
             m_customer.inquiry = (int)numericUpDownInquiry.Value;
             m_customer.browse  = (int)numericUpDownBrowse.Value;
