@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using PetaPoco;
 using Antlr.StringTemplate;
 using System.IO;
+using System.Diagnostics;
 
 namespace PhoebeContact
 {
@@ -287,6 +288,25 @@ namespace PhoebeContact
             return tmpl.ToString();
         }
 
+        void save_mail(string to, string subject, string body)
+        {
+            Process p = new Process();
+
+            p.StartInfo.FileName = "django-orm\\api.py";
+
+            p.StartInfo.Arguments = string.Format("{0} {1} {2}", to, subject, body);
+
+            p.StartInfo.UseShellExecute = false;
+
+            p.StartInfo.RedirectStandardInput = true;
+
+            p.StartInfo.RedirectStandardOutput = true;
+
+            p.StartInfo.RedirectStandardError = true;
+
+            p.StartInfo.CreateNoWindow = true; 
+        }
+
         private void buttonSend_Click(object sender, EventArgs e)
         {
             int count = listViewCustomer.CheckedItems.Count;
@@ -302,34 +322,41 @@ namespace PhoebeContact
             {
                 foreach (ListViewItem item in listViewCustomer.CheckedItems)
                 {
-                    buttonSend.Text = count.ToString() + "...";
-                    count -= 1;
-                    buttonSend.Update();
-                    Customer c = item.Tag as Customer;
-                    State s = m_states[c.state_id];
-                    string email = RenderEmail(c, s);
-                    postman.SendMail(c.email, "Re: Induction Light from ZKLighting", email);
-                    c.update_on = DateTime.Today;
-                    c.count -= 1;
-
-                    if (c.count <= 0)
+                    try
                     {
-                        c.count = 0;
-                    }
+                        buttonSend.Text = count.ToString() + "...";
+                        count -= 1;
+                        buttonSend.Update();
+                        Customer c = item.Tag as Customer;
+                        State s = m_states[c.state_id];
+                        string email = RenderEmail(c, s);
+                        postman.SendMail(c.email, "Re: Induction Light from ZKLighting", email);
+                        c.update_on = DateTime.Today;
+                        c.count -= 1;
 
-                    if (s.period > 0 && c.count == 0)
-                    {
-                        int new_state_id = c.state_id + 1;
-                        if (m_states.ContainsKey(new_state_id))
+                        if (c.count <= 0)
                         {
-                            c.state_id = new_state_id;
-                            c.count = m_states[new_state_id].total;
+                            c.count = 0;
                         }
+
+                        if (s.period > 0 && c.count == 0)
+                        {
+                            int new_state_id = c.state_id + 1;
+                            if (m_states.ContainsKey(new_state_id))
+                            {
+                                c.state_id = new_state_id;
+                                c.count = m_states[new_state_id].total;
+                            }
+                        }
+
+                        db.Save(c);
+
+                        UpdateListViewItem(c, item);
                     }
-
-                    db.Save(c);
-
-                    UpdateListViewItem(c, item);
+                    catch
+                    {
+                        continue;	
+                    }
                 }
             }
             catch (System.Exception ex)
